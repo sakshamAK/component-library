@@ -2,6 +2,8 @@
 :root {
     --primary-color: #F4653E;
     --secondary-color: #0891b2;
+    --font-white: #fefefe;
+    --select-color: #FF6D45;
 }
 
 * {
@@ -32,28 +34,67 @@
 .nav {
     display: flex;
     width: 100%;
-    background-color: #F4653E;
-    color: #fefefe;
+    background-color: var(--primary-color);
+    color: var(--font-white);
     align-items: center;
     padding: 0 calc(1rem + 4vw);
 }
 
 .nav-title {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.nav-title .material-icons {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav-title .brand {
+    display: flex;
+    align-items:  baseline;
     gap: 0.5rem;
 }
 
 .links {
+    position: absolute;
+    left: 0;
     display: flex;
-    margin-left: auto;
-    gap: 1rem;
+    width: 100vw;
+    flex-direction: column;
+    top: -15rem;
+}
+
+.hide {
+    top: -15rem;
+    transition: top 0.2s ease-in;
+}
+
+.show {
+    top: 0;
+    transition: top 0.2s ease-out;
 }
 
 .links li {
     display: inline-block;
     padding: 1rem;
+    background: var(--primary-color);
     cursor: pointer;
+}
+
+.links li:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+.links li .material-icons {
+    margin-left: auto;
+}
+
+.links li:hover {
+    background-color: var(--select-color);
 }
 
 .main-content {
@@ -84,5 +125,21 @@
 @media screen and (min-width: 570px){
     .intro-subtitle{
         padding:0 clamp(1rem, 1.5rem + 1vw, 3rem);
+    }
+}
+@media screen and (min-width: 530px){
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+        gap: 1vw;
+        position: initial;
+    }
+    .links li .material-icons{
+        display: none;
+    }
+    .nav-title .material-icons{
+        display: none;
     }
 }
