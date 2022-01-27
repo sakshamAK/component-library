@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 :root {
-    --primary-color: #F4653E;
-    --secondary-color: #0891b2;
+    --primary-color: #FF6619;
+    --secondary-color: #1e1e1e;
     --font-white: #fefefe;
-    --select-color: #FF6D45;
+    --select-color: #F47950;
 }
 
 * {
@@ -79,9 +79,9 @@
 
 .links li {
     display: inline-block;
-    padding: 1rem;
     background: var(--primary-color);
     cursor: pointer;
+    padding:1rem;
 }
 
 .links li:first-of-type{
@@ -93,8 +93,21 @@
     margin-left: auto;
 }
 
-.links li:hover {
-    background-color: var(--select-color);
+.links li a {
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: var(--font-white);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    display: block;
+    text-align: center;
+    width: 5rem;
+    /* margin: 0.5rem auto 0; */
 }
 
 .main-content {
@@ -103,18 +116,12 @@
     flex-direction: column;
     align-items: center;
     padding: 0 calc(1rem + 1vw); 
-    gap: 2rem;    
+    gap: 2rem;
 }
 
 #logo {
     height: 150px;
     /* margin: 2rem; */
-}
-
-@media screen and (min-width: 298px){
-    #logo {
-        margin: 2rem;
-    }
 }
 @media screen and (min-width: 309px){
     .intro-title{   
@@ -128,18 +135,37 @@
     }
 }
 @media screen and (min-width: 530px){
+    #logo {
+        margin: 2rem;
+    }
+    .btn-primary{
+        display: none;
+    }
     .links {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         margin-left: auto;
+        align-items: center;
         gap: 1vw;
         position: initial;
     }
     .links li .material-icons{
         display: none;
     }
+
+    .links li {
+        padding: 0;
+    }
     .nav-title .material-icons{
         display: none;
+    }
+    .links li a {
+        padding: 0.5rem 1rem;
+    }
+    
+    .links li:first-of-type {
+        background-color: var(--secondary-color);
+        border-radius: 10px;
     }
 }
