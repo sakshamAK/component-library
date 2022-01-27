@@ -23,12 +23,15 @@
 .intro-title {
     font-size: calc(1.5rem + 2.5vw);
     line-height: 1.2em;
+    padding: 2vh;
     text-align: center;
+    margin-top: calc(1rem + 1vw);
 }
 
 .intro-subtitle {
     font-size: calc(1rem + 0.5vw);
     text-align: center;
+    /* padding:0 clamp(1rem, 1.5rem + 1vw, 3rem); */
 }
 
 .nav {
@@ -121,19 +124,15 @@
 
 #logo {
     height: 150px;
-    /* margin: 2rem; */
+    margin-top: 2rem;
 }
-@media screen and (min-width: 309px){
-    .intro-title{   
-        margin-top: calc(1rem + 1vw);
-    }
-    
-}
+
 @media screen and (min-width: 570px){
     .intro-subtitle{
         padding:0 clamp(1rem, 1.5rem + 1vw, 3rem);
     }
 }
+
 @media screen and (min-width: 530px){
     #logo {
         margin: 2rem;
