@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper UI | Avatar</title>
+    <link rel="stylesheet" href="avatar.css">
+    <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-title">
+          <span class = "brand">
+            <h2>PaperUI</h2>
+            <span>v1.0</span>
+          </span>
+          <span class="material-icons" id = "menu">menu</span>
+        </div>
+        <ul class="links">
+          <li><a href = "../../documentation.html">Docs</a> 
+            <span class = "material-icons" id = "close-btn">close</span>
+          </li>
+          <li><a href = "#">Examples</a></li>
+          <li><a href = "#">Resources</a></li>
+        </ul>
+      </nav>
+
+      <main class = "grid-container">
+          <ul class = "side-navbar">
+              <h3 class = "list-heading">Getting Started</h3>
+              <li class = "nav-items"><a class = "reset-a" href = "../../index.html">Introduction</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Color</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Typography</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Conclusion</a></li>
+              
+              <h3 class = "list-heading">Components</h3>
+              <li class = "nav-items"><a class = "reset-a" href = "alert.html">Alert</a></li>
+              <li class = "nav-items"><a class = "reset-a active" href = "#">Avatar</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Badge</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Button</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Card</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Image</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Input</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Text Utilities</a></li>
+              <li class = "nav-items"><a class = "reset-a" href = "#">Lists</a></li>
+              <li class = "nav-items"></li>
+            </ul>
+            <main class = "main-content">
+                <h1>Avatars</h1>
+                <p>An avatar is the face of user's profile. It is the user profile picture. It is a small image consisting of user's face generally to give user's content a visual identity.</p>
+                <hr />
+                <h2>Profile Avatar</h2>
+                <p>Profile Avatars are the primary avatars that will be placed by default. They can be accessed by the avatar class.</p>
+                <h3>Examples</h3>
+                <div class = "example-box">
+                    <img class = "avatar" src = "../../images/avatars/profile3.jpg"></img>
+                    <img class = "avatar" src = "../../images/avatars/profile2.jpg"></img>
+                    <img class = "avatar" src = "../../images/avatars/profile1.jpg"></img>
+                </div>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%2520%253D%2520%2522avatar%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile3.jpg%2522%253E%253C%252Fimg%253E%250A%253Cimg%2520class%2520%253D%2520%2522avatar%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile2.jpg%2522%253E%253C%252Fimg%253E%250A%253Cimg%2520class%2520%253D%2520%2522avatar%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%253E%253C%252Fimg%253E"
+                style="height: 258px;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <h2>Avatar Sizes</h2>
+            <p>There are multiple sizes for avatars. These can be accessed by class names sm, md, and lg.</p>
+            <h3>Examples</h3>
+            <div class="example-box">
+                <img class = "avatar sm" src = "../../images/avatars/profile1.jpg"></img>
+                <img class = "avatar md" src = "../../images/avatars/profile1.jpg"></img>
+                <img class = "avatar lg" src = "../../images/avatars/profile1.jpg"></img>
+                </div>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%2520%253D%2520%2522avatar%2520sm%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%253E%253C%252Fimg%253E%250A%253Cimg%2520class%2520%253D%2520%2522avatar%2520md%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%253E%253C%252Fimg%253E%250A%253Cimg%2520class%2520%253D%2520%2522avatar%2520lg%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%253E%253C%252Fimg%253E%250A"
+                style="height: 282px;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <h2>Square Avatar</h2>
+            <p>Avatars in square shape can be accessed by the class name 'square'</p>
+            <h3>Examples</h3>
+            <div class = "example-box">
+                <img class = "avatar square" src = "../../images/avatars/profile2.jpg"></img>
+                <img class = "avatar square" src = "../../images/avatars/profile1.jpg"></img>
+                <img class = "avatar square" src = "../../images/avatars/profile3.jpg"></img>
+            </div>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%2520%253D%2520%2522avatar%2520square%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile2.jpg%2522%253E%253C%252Fimg%253E%250A%253Cimg%2520class%2520%253D%2520%2522avatar%2520square%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%253E%253C%252Fimg%253E%250A%253Cimg%2520class%2520%253D%2520%2522avatar%2520square%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile3.jpg%2522%253E%253C%252Fimg%253E%250A"
+            style="height: 282px;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <hr />
+            <footer>
+                <a class = "reset-a" href = "../badge/badge.html" >Badge</a><i class= "material-icons">chevron_right</i>
+            </footer>
+        </main>
+    </main>
+</body>
+</html>
