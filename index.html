@@ -6,25 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PaperAK UI</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <main class="container">
       <nav class="nav">
-        <div class = "nav-title">
-          <h2>PaperUI</h2>
-          <span>v1.0</span>
+        <div class="nav-title">
+          <span class = "brand">
+            <h2>PaperUI</h2>
+            <span>v1.0</span>
+          </span>
+          <span class="material-icons" id = "menu">menu</span>
         </div>
         <ul class="links">
-          <li>Docs</li>
-          <li>Examples</li>
-          <li>Resources</li>
+          <li><a href = "#">Docs</a> 
+            <span class = "material-icons" id = "close-btn">close</span>
+          </li>
+          <li><a href = "#">Examples</a></li>
+          <li><a href = "#">Resources</a></li>
         </ul>
       </nav>
-      <main class = "main-content">
-        <h1 class = "intro-title">Introducing you a sarcastically serious framework</h1>
-        <p class = "intro-subtitle">PaperAK is a free, open-source CSS framework that builds responsive designs using pre-defined classes, components and utilities</p>
-        <img id = "logo" alt = "logo" src = "images/p.png" /> 
+      <main class="main-content">
+        <h1 class="intro-title">
+          Introducing you a sarcastically serious framework
+        </h1>
+        <p class="intro-subtitle">
+          PaperAK is a free, open-source CSS framework that builds responsive
+          designs using pre-defined classes, components and utilities.
+        </p>
+        <a class = "btn-primary" href = "#"> Docs</a>
+        <img id="logo" alt="logo" src="images/p.png" />
       </main>
     </main>
   </body>
