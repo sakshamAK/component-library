@@ -80,3 +80,7 @@ iframe {
     transform: scale(1); 
     overflow:hidden;
 }
+
+.far-left {
+    margin-right: auto;
+}
