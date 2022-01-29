@@ -22,7 +22,6 @@
     font-size: calc(1rem + 0.5vw);
     text-align: center;
 }
-
 .btn-primary {
     color: var(--font-white);
     text-decoration: none;
