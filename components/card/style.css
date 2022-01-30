@@ -15,7 +15,6 @@
     border-radius: 5px;
     font-size: 1rem;
     box-shadow: 1px 1px 5px var(--secondary-color);
-    width: 20rem;
 }
 
 .card-img {
@@ -60,10 +59,61 @@
 .card p {
     margin: 1rem 0 0;
     font-size: 1.1rem;
+    width: 20rem;
 }
 
 .wc {
     width: 22rem;
+}
+
+.card .c-footer {
+    display: inline;
+}
+
+.c-footer {
+    color: gray;
+    font-size: 1rem;
+}
+
+.img-txt-container {
+    position: relative;
+    width: 20rem;
+}
+
+.txt-over-img {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+    color: var(--font-white);
+}
+.full-img {
+    width: 100%;
+    margin: 0;
+}
+
+.card-toi {
+    padding: 0;
+}
+
+.card-toi p {
+    padding: 1rem;
+}
+
+.horiz {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+}
+
+.horz-img {
+    height: 100%;
+    margin: -1rem 1rem 0 -1rem;
+}
+
+.vert-txt {
+    display: flex;
+    flex-direction: column;
 }
 /***** */
 
