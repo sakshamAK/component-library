@@ -91,6 +91,28 @@
 .lg {
     font-size: 1.5rem;
 }
+
+.btn-fa {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.btn-fa .material-icons {
+    font-size: 2rem;
+}
+
+.float-action {
+    position: relative;
+}
+
+.float-action img {
+    width: 100%;
+}
 /***** */
 
 
