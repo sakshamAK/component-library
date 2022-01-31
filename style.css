@@ -22,84 +22,6 @@
     font-size: calc(1rem + 0.5vw);
     text-align: center;
 }
-.nav {
-    display: flex;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--font-white);
-    align-items: center;
-    padding: 0 calc(1rem + 4vw);
-}
-
-.nav-title {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    width: 100%;
-}
-
-.nav-title .material-icons {
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.nav-title .brand {
-    display: flex;
-    align-items:  baseline;
-    gap: 0.5rem;
-}
-
-.links {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -15rem;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    top: -15rem;
-}
-
-.hide {
-    top: -15rem;
-    transition: top 0.2s ease-in;
-}
-
-.show {
-    top: 0;
-    transition: top 0.2s ease-out;
-}
-
-.links li {
-    display: inline-block;
-    background: var(--primary-color);
-    cursor: pointer;
-    padding:1rem;
-}
-
-.links li:first-of-type{
-    display: flex;
-    align-items: center;
-}
-
-.links li .material-icons {
-    margin-left: auto;
-}
-
-.links li a {
-    color: var(--font-white);
-    text-decoration: none;
-}
-.btn-primary {
-    color: var(--font-white);
-    text-decoration: none;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    padding: 0.3rem 1rem;
-    display: block;
-    text-align: center;
-    width: 5rem;
-}
 
 .main-content {
     max-width: calc(60rem - 2rem);
@@ -125,35 +47,10 @@
     #logo {
         margin: 2rem;
     }
-    .btn-primary{
+    .btn-docs{
         display: none;
     }
-    .links {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-left: auto;
-        align-items: center;
-        gap: 1vw;
-        position: initial;
-    }
-    .links li .material-icons{
-        display: none;
-    }
-
-    .links li {
-        padding: 0;
-    }
-    .nav-title .material-icons{
-        display: none;
-    }
-    .links li a {
-        padding: 0.5rem 1rem;
-    }
-    
-    .links li:first-of-type {
-        background-color: var(--secondary-color);
-        border-radius: 10px;
-        padding-right: 0;
+    #main-btn {
+        display: block;
     }
 }

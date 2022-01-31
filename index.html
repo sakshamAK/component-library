@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PaperAK UI</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
     <link
@@ -15,20 +16,20 @@
   </head>
   <body>
     <main class="container">
-      <nav class="nav">
+      <nav class="navbar">
         <div class="nav-title">
           <span class = "brand">
             <h2>PaperUI</h2>
             <span>v1.0</span>
           </span>
-          <span class="material-icons" id = "menu">menu</span>
+          <span class="material-icons ml-auto" id = "menu">menu</span>
         </div>
-        <ul class="links">
-          <li><a href = "./documentation.html">Docs</a> 
+        <ul class="nav-links">
+          <li class = "navbar-items"><a class = "btn-docs" id = "main-btn" href = "./documentation.html">Docs</a> 
             <span class = "material-icons" id = "close-btn">close</span>
           </li>
-          <li><a href = "#">Examples</a></li>
-          <li><a href = "#">Resources</a></li>
+          <li class = "navbar-items"><a href = "#">Examples</a></li>
+          <li class = "navbar-items"><a href = "#">Resources</a></li>
         </ul>
       </nav>
       <main class="main-content">
@@ -39,7 +40,7 @@
           PaperAK is a free, open-source CSS framework that builds responsive
           designs using pre-defined classes, components and utilities.
         </p>
-        <a class = "btn-primary" href = "./documentation.html"> Docs</a>
+        <a class = "btn-docs" href = "./documentation.html"> Docs</a>
         <img id="logo" alt="logo" src="images/p.png" />
       </main>
     </main>
