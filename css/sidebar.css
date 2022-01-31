@@ -19,25 +19,27 @@
 .reset-a {
     color: var(--secondary-color);
     text-decoration: none;
-}
-
-.nav-items a {
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     display: block;
     width: 100%;
 }
 
+.footer-a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 .list-heading {
     padding: 1rem 0;
 }
 
-.nav-items a:hover {
+.reset-a:hover {
     background: var(--secondary-color);
     color: var(--font-white);
 }
 
-.main-content footer {
+.nav-footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -55,7 +57,7 @@
     font-size: 1.4rem;
 }
 
-.main-content p {
+.content-desc {
     font-size: 1.2rem;
     margin: 1rem 0;
 }

@@ -1,5 +1,6 @@
 @import url("../../css/navbar.css");
 @import url("../../css/sidebar.css");
+@import url("../../css/colors.css");
 
 /***** MAIN CONTENT*/
 .example-box {
@@ -14,6 +15,7 @@
     background: var(--font-white);
     border-radius: 5px;
     font-size: 1rem;
+    color: black;
     box-shadow: 1px 1px 5px var(--secondary-color);
 }
 
@@ -28,20 +30,11 @@
     align-items: center;
 }
 
-.btn {
-    padding: 0 0.5rem;
-    color: var(--font-white);
-    text-decoration: none;
-    background: var(--select-color);
-    font-size: 1.2rem;
-    border-radius: 3px;
-}
-
-.btn-grp .material-icons:first-of-type() {
+.card-icon:first-of-type() {
     margin-left: auto;
 }
 
-.btn-grp .material-icons {
+.card-icon {
     padding: 0.5rem;
     box-sizing: border-box;
 }
@@ -51,19 +44,17 @@
     margin-left: auto;
 }
 
-.btn-grp .material-icons:hover {
+.card-icon:hover {
     background: lightgray;
     border-radius: 50%;
 }
 
 .card p {
-    margin: 1rem 0 0;
-    font-size: 1.1rem;
     width: 20rem;
 }
 
 .wc {
-    width: 22rem;
+    width: 23rem;
 }
 
 .card .c-footer {
@@ -97,7 +88,7 @@
 }
 
 .card-toi p {
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .horiz {
@@ -116,40 +107,16 @@
     flex-direction: column;
 }
 
-.badge {
+.badge-icon {
+    right: 1em;
+}
+
+.dismiss {
+    position: relative;
+}
+
+#close {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    background: var(--secondary-color);
+    right: 0.5em;
 }
 /***** */
-
-@media screen and (min-width: 530px){
-    .links {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-left: auto;
-        align-items: center;
-        gap: 1vw;
-        position: initial;
-    }
-    .links li .material-icons{
-        display: none;
-    }
-
-    .links li {
-        padding: 0;
-    }
-    .nav-title .material-icons{
-        display: none;
-    }
-    .links li a {
-        padding: 0.5rem 1rem;
-    }
-    
-    .links li:first-of-type {
-        border-radius: 10px;
-        padding-right: 0;
-    }
-}

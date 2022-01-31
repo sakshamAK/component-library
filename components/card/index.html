@@ -1,241 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paper UI | Cards</title>
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="../badge/badge.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon">
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
+
 <body>
-    <nav class="nav">
+    <nav class="navbar">
         <div class="nav-title">
-            <span class = "brand">
+            <span class="brand">
                 <h2>PaperUI</h2>
                 <span>v1.0</span>
             </span>
-            <span class="material-icons" id = "menu">menu</span>
+            <span class="material-icons ml-auto" id="menu">menu</span>
         </div>
-        <ul class="links">
-            <li><a href = "../alert/alert.html">Docs</a> 
-                <span class = "material-icons" id = "close-btn">close</span>
+        <ul class="nav-links">
+            <li class="navbar-items"><a href="../../documentation.html">Docs</a>
+                <span class="material-icons ml-auto" id="close-btn">close</span>
             </li>
-            <li><a href = "#">Examples</a></li>
-            <li><a href = "#">Resources</a></li>
+            <li class="navbar-items"><a href="#">Examples</a></li>
+            <li class="navbar-items"><a href="#">Resources</a></li>
         </ul>
     </nav>
 
-    <main class = "grid-container">
-        <ul class = "side-navbar">
-            <h3 class = "list-heading">Getting Started</h3>
-            <li class = "nav-items"><a class = "reset-a" href = "../../index.html">Introduction</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Color</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Typography</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Conclusion</a></li>
-            
-            <h3 class = "list-heading">Components</h3>
-            <li class = "nav-items"><a class = "reset-a" href = "../alert/alert.html">Alert</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "../avatar/avatar.html">Avatar</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "../badge/badge.html">Badge</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "../button/button.html">Button</a></li>
-            <li class = "nav-items"><a class = "reset-a active" href = "../card/index.html">Card</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Image</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Input</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Text Utilities</a></li>
-            <li class = "nav-items"><a class = "reset-a" href = "#">Lists</a></li>
-            <li class = "nav-items"></li>
+    <main class="grid-container">
+        <ul class="side-navbar">
+            <h3 class="list-heading">Getting Started</h3>
+            <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+
+            <h3 class="list-heading">Components</h3>
+            <li class="nav-items"><a class="reset-a" href="../alert/">Alert</a></li>
+            <li class="nav-items"><a class="reset-a" href="../avatar/">Avatar</a></li>
+            <li class="nav-items"><a class="reset-a" href="../badge/">Badge</a></li>
+            <li class="nav-items"><a class="reset-a" href="../button/">Button</a></li>
+            <li class="nav-items"><a class="reset-a active" href="../card/">Card</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Image</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Input</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Text Utilities</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Lists</a></li>
+            <li class="nav-items"></li>
         </ul>
-        <main class = "main-content">
+        <main class="main-content">
             <h1>Cards</h1>
-            <p>Cards are pre-built containers that provides a short and crisp information to the user through text, images, links, and buttons</p>
+            <p class="content-desc">Cards are pre-built containers that provides a short and crisp information to the
+                user through text, images, links, and buttons</p>
             <hr />
             <h2>Default Card</h2>
-            <p>These cards are text only with a header and a text.</p>
+            <p class="content-desc">These cards are text only with a header and a text.</p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card">
                     <h2>This is a Heading</h2>
                     <h4>This is a sub-heading</h4>
-                    <p>
+                    <p class="content-desc">
                         In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
                     </p>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-            style="height: 360px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 306px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
             <h2>Card with image</h2>
-            <p>These cards provide content with images inside. Use .card-img class to add images to the card.</p>
+            <p class="content-desc">These cards provide content with images inside. Use .card-img class to add images to
+                the card.</p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card">
                     <h2>This is a Heading</h2>
                     <h4>This is a sub-heading</h4>
-                    <img class = "card-img" src = "https://picsum.photos/300/200" alt = "sample image" />
-                    <p>
+                    <img class="card-img" src="https://picsum.photos/300/200" alt="sample image" />
+                    <p class="content-desc">
                         In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
                     </p>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%2520class%2520%253D%2520%2522card-img%2522%2520src%2520%253D%2520%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%2520alt%2520%253D%2520%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-            style="height: 405px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%250A%2520%2520%2520%2520alt%253D%2522sample%2520image%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 418px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
-                
+
             <h2>Image, Title, and buttons</h2>
-            <p>Use the <code>.btn-grp</code> container with <code>.btn</code> class to get the buttons.</p>
+            <p class="content-desc">Use the <code>.btn-grp</code> container with <code>.btn</code> class to get the
+                buttons.</p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card">
                     <h2>This is a Heading</h2>
                     <h4>This is a sub-heading</h4>
-                    <img class = "card-img" src = "https://picsum.photos/300/200" alt = "sample image" />
-                    <p>
+                    <img class="card-img" src="https://picsum.photos/300/200" alt="sample image" />
+                    <p class="content-desc">
                         In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
                     </p>
-                    <div class = "btn-grp">
-                        <a class = "btn" href = "#">View</a>
-                        <a class = "btn" href = "#">Read more</a>
+                    <div class="btn-grp">
+                        <a class="btn primary" href="#">View</a>
+                        <a class="btn primary" href="#">Read more</a>
                     </div>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=91px&ph=76px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%2520class%2520%253D%2520%2522card-img%2522%2520src%2520%253D%2520%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%2520alt%2520%253D%2520%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%2520%253D%2520%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253EView%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253ERead%2520more%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            style="height: 524px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%250A%2520%2520%2520%2520alt%253D%2522sample%2520image%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520View%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520Read%2520more%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 597px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
             <h2>Image, buttons, and icons</h2>
-            <p>Use the <code>.card-icons</code> class to get the icons</p>
+            <p class="content-desc">Use the <code>.icon-grp</code> class to get the icons</p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card wc">
                     <h2>This is a Heading</h2>
                     <h4>This is a sub-heading</h4>
-                    <img class = "card-img" src = "https://picsum.photos/300/200" alt = "sample image" />
-                    <p>
+                    <img class="card-img" src="https://picsum.photos/300/200" alt="sample image" />
+                    <p class="content-desc">
                         In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
                     </p>
-                    <div class = "btn-grp">
-                        <a class = "btn" href = "#">View</a>
-                        <a class = "btn" href = "#">Read more</a>
+                    <div class="btn-grp">
+                        <a class="btn primary" href="#">View</a>
+                        <a class="btn primary" href="#">Read more</a>
                         <div class="icon-grp">
-                            <i class = "material-icons">favorite_border</i>
-                            <i class = "material-icons">share</i>
-                            <i class = "material-icons">more_vert</i>
+                            <i class="material-icons card-icon">favorite_border</i>
+                            <i class="material-icons card-icon">share</i>
+                            <i class="material-icons card-icon">more_vert</i>
                         </div>
                     </div>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=91px&ph=76px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520wc%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%2520class%2520%253D%2520%2522card-img%2522%2520src%2520%253D%2520%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%2520alt%2520%253D%2520%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%2520%253D%2520%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253EView%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253ERead%2520more%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-grp%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Efavorite_border%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Emore_vert%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            style="height: 686px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522card%2520wc%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%250A%2520%2520%2520%2520alt%253D%2522sample%2520image%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520View%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520Read%2520more%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-grp%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Efavorite_border%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Emore_vert%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 709px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
             <h2>Image, footer, buttons, and icons</h2>
-            <p>Use the <code>.c-footer</code> to create the footer. </p>
+            <p class="content-desc">Use the <code>.c-footer</code> to create the footer. </p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card wc">
                     <h2>This is a Heading</h2>
                     <h4>This is a sub-heading</h4>
-                    <img class = "card-img" src = "https://picsum.photos/300/200" alt = "sample image" />
-                    <p>
+                    <img class="card-img" src="https://picsum.photos/300/200" alt="sample image" />
+                    <p class="content-desc">
                         In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
                     </p>
-                    <footer class = "c-footer">Updated 12 mins ago.</footer>
-                    <div class = "btn-grp">
-                        <a class = "btn" href = "#">View</a>
-                        <a class = "btn" href = "#">Read more</a>
+                    <footer class="c-footer">Updated 12 mins ago.</footer>
+                    <div class="btn-grp">
+                        <a class="btn primary" href="#">View</a>
+                        <a class="btn primary" href="#">Read more</a>
                         <div class="icon-grp">
-                            <i class = "material-icons">favorite_border</i>
-                            <i class = "material-icons">share</i>
-                            <i class = "material-icons">more_vert</i>
+                            <i class="material-icons card-icon">favorite_border</i>
+                            <i class="material-icons card-icon">share</i>
+                            <i class="material-icons card-icon">more_vert</i>
                         </div>
                     </div>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520wc%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%2520class%2520%253D%2520%2522card-img%2522%2520src%2520%253D%2520%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%2520alt%2520%253D%2520%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cfooter%2520class%2520%253D%2520%2522c-footer%2522%253EUpdated%252012%2520mins%2520ago.%253C%252Ffooter%253E%250A%2520%2520%253Cdiv%2520class%2520%253D%2520%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253EView%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253ERead%2520more%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-grp%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Efavorite_border%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Emore_vert%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            style="height: 524px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522card%2520wc%2522%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F300%252F200%2522%250A%2520%2520%2520%2520alt%253D%2522sample%2520image%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cfooter%2520class%253D%2522c-footer%2522%253EUpdated%252012%2520mins%2520ago.%253C%252Ffooter%253E%250A%2520%2520%253Cdiv%2520class%253D%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520View%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520Read%2520more%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-grp%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Efavorite_border%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Emore_vert%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 731px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
             <h2>Text over Image</h2>
-            <p>Add your headings over the image using the below code.</p>
+            <p class="content-desc">Add your headings over the image using the below code.</p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card card-toi">
-                    <div class = "img-txt-container">
+                    <div class="img-txt-container">
                         <div class="txt-over-img">
                             <h2>This is a Heading</h2>
                             <h4>This is a sub-heading</h4>
                         </div>
-                        <img class = "card-img full-img" src = "../../images/avatars/profile1.jpg" alt = "sample image" />
+                        <img class="card-img full-img" src="../../images/avatars/profile1.jpg" alt="sample image" />
                     </div>
-                    <p>
+                    <p class="content-desc">
                         In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
                     </p>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-toi%2522%253E%250A%2520%2520%253Cdiv%2520class%2520%253D%2520%2522img-txt-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522txt-over-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%2520class%2520%253D%2520%2522card-img%2520full-img%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%2520alt%2520%253D%2520%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-            style="height: 390px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522card%2520card-toi%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522img-txt-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522txt-over-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2520full-img%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522sample%2520image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 507px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
             <h2>Horizontal Card</h2>
-            <p>You can also use a compact horizontal card in your project with the below code.</p>
+            <p class="content-desc">You can also use a compact horizontal card in your project with the below code.</p>
             <h3>Examples</h3>
-            <div class = "example-box">
+            <div class="example-box">
                 <div class="card">
-                    <div class = "horiz">
-                        <img class = "horz-img" src = "../../images/avatars/profile1.jpg" alt = "sample image" />
-                        <div class = "vert-txt">
+                    <div class="horiz">
+                        <img class="horz-img" src="../../images/avatars/profile1.jpg" alt="sample image" />
+                        <div class="vert-txt">
                             <h2>This is a Heading</h2>
                             <h4>This is a sub-heading</h4>
                         </div>
                     </div>
-                    <div class = "btn-grp">
-                        <a class = "btn" href = "#">View</a>
-                        <a class = "btn" href = "#">Read more</a>
+                    <div class="btn-grp">
+                        <a class="btn primary" href="#">View</a>
+                        <a class="btn primary" href="#">Read more</a>
                         <div class="icon-grp">
-                            <i class = "material-icons">favorite_border</i>
-                            <i class = "material-icons">share</i>
-                            <i class = "material-icons">more_vert</i>
+                            <i class="material-icons card-icon">favorite_border</i>
+                            <i class="material-icons card-icon">share</i>
+                            <i class="material-icons card-icon">more_vert</i>
                         </div>
                     </div>
                 </div>
             </div>
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%2520%253D%2520%2522horiz%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%2520%253D%2520%2522horz-img%2522%2520src%2520%253D%2520%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%2520alt%2520%253D%2520%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%2520%253D%2520%2522vert-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%2520%253D%2520%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253EView%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%2520%253D%2520%2522btn%2522%2520href%2520%253D%2520%2522%2523%2522%253ERead%2520more%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-grp%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Efavorite_border%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Emore_vert%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            style="height: 524px;"
-            sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522horiz%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522horz-img%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fimages%252Favatars%252Fprofile1.jpg%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522sample%2520image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522vert-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522btn-grp%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520View%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520primary%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520Read%2520more%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-grp%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Efavorite_border%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2520card-icon%2522%253Emore_vert%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 709px;" sandbox="allow-scripts allow-same-origin">
             </iframe>
             <h2>Horizontal Card</h2>
-            <p>You can also use a compact horizontal card in your project with the below code.</p>
+            <p class="content-desc">You can also use a compact horizontal card in your project with the below code.</p>
             <h3>Examples</h3>
-            <div class = "example-box">
-                <div class="card">
-                    <h2>This is a Heading</h2>
-                    <h4>This is a sub-heading</h4>
-                    <p>
-                        In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
-                    </p>
-                    <div class = "badge">3</div>
+            <div class="example-box">
+                <div class="badge">
+                    <div class="card">
+                        <h2>This is a Heading</h2>
+                        <h4>This is a sub-heading</h4>
+                        <p class="content-desc">
+                            In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
+                        </p>
+                    </div>
+                    <div class="badge-icon badge-num danger">7</div>
                 </div>
             </div>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522content-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%250A%2520%2520%2520%2520%2520%2520ad%2520voluptate%2520ex.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-icon%2520badge-num%2520danger%2522%253E7%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                style="height: 373px;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <h2>Cards with dismiss</h2>
+            <p class="content-desc">Cards can also have a dismiss option where you can cancel or delete a card</p>
+            <h3>Examples</h3>
+            <div class="example-box">
+                <div class="card dismiss">
+                    <i class="material-icons" id=close>close</i>
+                    <h2>This is a Heading</h2>
+                    <h4>This is a sub-heading</h4>
+                    <p class="content-desc">
+                        In officia laborum tempor voluptate id Lorem velit elit aliqua aliqua duis ad voluptate ex.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520dismiss%2522%253E%250A%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%2520id%2520%253D%2520close%253Eclose%253C%252Fi%253E%250A%2520%2520%253Ch2%253EThis%2520is%2520a%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520sub-heading%253C%252Fh4%253E%250A%2520%2520%253Cp%2520class%2520%253D%2520%2522content-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520In%2520officia%2520laborum%2520tempor%2520voluptate%2520id%2520Lorem%2520velit%2520elit%2520aliqua%2520aliqua%2520duis%2520ad%2520voluptate%2520ex.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                style="height: 284px;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
             <hr />
-            <footer>
-                <i class= "material-icons">chevron_left</i><a class = "reset-a far-left" href = "../" >Button</a>
-                <a class = "reset-a" href = "../image/index.html" >image</a><i class= "material-icons">chevron_right</i>
+            <footer class="nav-footer">
+                <i class="material-icons">chevron_left</i><a class="footer-a far-left"
+                    href="../button/button.html">Button</a>
+                <a class="footer-a" href="../image/index.html">image</a><i class="material-icons">chevron_right</i>
             </footer>
         </main>
     </main>
 </body>
+
 </html>

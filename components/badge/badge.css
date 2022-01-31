@@ -1,5 +1,6 @@
 @import url("../../css/navbar.css");
 @import url("../../css/sidebar.css");
+@import url("../../css/colors.css");
 
 /***** MAIN CONTENT*/
 
@@ -19,16 +20,6 @@
     border: 3px solid white;
 }
 
-.online {
-    background: #32cd32;
-}
-.offline {
-    background: #dc2626;
-}
-.dnd {
-    background: #f59e0b;
-}
-
 #flx-c {
     flex-direction: column;
 }
@@ -45,83 +36,24 @@
     color: var(--font-white);
 }
 
-.badge .material-icons {
+.material-icons.badge-ico {
     font-size: 2.5rem;
     color: black;
 }
 
 .badge-num {
     border: none;
-    bottom: 1rem;
-    font-size: 0.7rem;
+    bottom: 1em;
+    padding: 0.5em;
+    font-size: 0.5em;
     font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.primary {
-    background-color: #3454D1;
-    padding: 0 1rem;
-    border-radius: 5px;
-}
-
-.secondary {
-    background-color: #71717a;
-    padding: 0 1rem;
-    border-radius: 5px;
-}
-
-.success {
-    background-color: #32cd32;
-    padding: 0 1rem;
-    border-radius: 5px;
-}
-
-.danger {
-    background-color: #dc2626;
-    padding: 0 1rem;
-    border-radius: 5px;
-}
-.warning {
-    background-color: #f59e0b;
-    padding: 0 1rem;
-    border-radius: 5px;
-}
-.dark {
-    background-color: var(--secondary-color);
+.bg {
     padding: 0 1rem;
     border-radius: 5px;
 }
 /***** */
-
-
-@media screen and (min-width: 530px){
-    .links {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-left: auto;
-        align-items: center;
-        gap: 1vw;
-        position: initial;
-    }
-    .links li .material-icons{
-        display: none;
-    }
-
-    .links li {
-        padding: 0;
-    }
-    .nav-title .material-icons{
-        display: none;
-    }
-    .links li a {
-        padding: 0.5rem 1rem;
-    }
-    
-    .links li:first-of-type {
-        border-radius: 10px;
-        padding-right: 0;
-    }
-}

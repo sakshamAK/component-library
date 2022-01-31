@@ -36,34 +36,3 @@
 
 
 /***** */
-
-
-@media screen and (min-width: 530px){
-    .links {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-left: auto;
-        align-items: center;
-        gap: 1vw;
-        position: initial;
-    }
-    .links li .material-icons{
-        display: none;
-    }
-
-    .links li {
-        padding: 0;
-    }
-    .nav-title .material-icons{
-        display: none;
-    }
-    .links li a {
-        padding: 0.5rem 1rem;
-    }
-    
-    .links li:first-of-type {
-        border-radius: 10px;
-        padding-right: 0;
-    }
-}
