@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
-:root {
-    --primary-color: #FF6619;
-    --secondary-color: #1e1e1e;
-    --font-white: #fefefe;
-    --select-color: #F47950;
-}
+@import url("./css/navbar.css");
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .container {
     width: 100%;
     font-family: 'Baloo 2', cursive;
@@ -32,7 +22,6 @@
     font-size: calc(1rem + 0.5vw);
     text-align: center;
 }
-
 .nav {
     display: flex;
     width: 100%;
@@ -101,7 +90,6 @@
     color: var(--font-white);
     text-decoration: none;
 }
-
 .btn-primary {
     color: var(--font-white);
     text-decoration: none;
@@ -166,5 +154,6 @@
     .links li:first-of-type {
         background-color: var(--secondary-color);
         border-radius: 10px;
+        padding-right: 0;
     }
 }
