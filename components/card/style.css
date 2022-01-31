@@ -1,0 +1,148 @@
+@import url("../../css/navbar.css");
+@import url("../../css/sidebar.css");
+
+/***** MAIN CONTENT*/
+.example-box {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--font-white);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
+.card-img {
+    margin: 1rem -1rem 0;
+}
+
+.btn-grp {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.btn {
+    padding: 0 0.5rem;
+    color: var(--font-white);
+    text-decoration: none;
+    background: var(--select-color);
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+
+.btn-grp .material-icons:first-of-type() {
+    margin-left: auto;
+}
+
+.btn-grp .material-icons {
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.icon-grp {
+    display: flex;
+    margin-left: auto;
+}
+
+.btn-grp .material-icons:hover {
+    background: lightgray;
+    border-radius: 50%;
+}
+
+.card p {
+    margin: 1rem 0 0;
+    font-size: 1.1rem;
+    width: 20rem;
+}
+
+.wc {
+    width: 22rem;
+}
+
+.card .c-footer {
+    display: inline;
+}
+
+.c-footer {
+    color: gray;
+    font-size: 1rem;
+}
+
+.img-txt-container {
+    position: relative;
+    width: 20rem;
+}
+
+.txt-over-img {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+    color: var(--font-white);
+}
+.full-img {
+    width: 100%;
+    margin: 0;
+}
+
+.card-toi {
+    padding: 0;
+}
+
+.card-toi p {
+    padding: 1rem;
+}
+
+.horiz {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+}
+
+.horz-img {
+    height: 100%;
+    margin: -1rem 1rem 0 -1rem;
+}
+
+.vert-txt {
+    display: flex;
+    flex-direction: column;
+}
+/***** */
+
+@media screen and (min-width: 530px){
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+        align-items: center;
+        gap: 1vw;
+        position: initial;
+    }
+    .links li .material-icons{
+        display: none;
+    }
+
+    .links li {
+        padding: 0;
+    }
+    .nav-title .material-icons{
+        display: none;
+    }
+    .links li a {
+        padding: 0.5rem 1rem;
+    }
+    
+    .links li:first-of-type {
+        border-radius: 10px;
+        padding-right: 0;
+    }
+}
