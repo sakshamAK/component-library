@@ -1,0 +1,42 @@
+.example-box {
+    width: 20rem;
+    margin: 1rem auto;
+    
+}
+
+.list-grp {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    border: 1px solid lightgray;
+    margin: 1rem 0;
+}
+
+.space-list {
+    gap: 1rem;
+}
+.space-list .list-head {
+    margin-bottom: -1rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+}
+.list-item:hover{
+    background: lightgray;
+}
+.list-head {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.list-item:last-child{
+    border: none;
+}
+
+.notif {
+    
+}
