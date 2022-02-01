@@ -1,119 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paper UI | Lists</title>
+    <title>Paper UI | Navigation</title>
     <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/sidebar.css" />
     <link rel="stylesheet" href="../../css/colors.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="../../images/logo.svg"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
+    <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <nav class="navbar">
-      <div class="nav-title">
-        <span class="brand">
-          <h2>PaperUI</h2>
-          <span>v1.0</span>
-        </span>
-        <span class="material-icons ml-auto" id="menu">menu</span>
-      </div>
-      <ul class="nav-links">
-        <li class="navbar-items">
-          <a href="../../documentation.html">Docs</a>
-          <span class="material-icons ml-auto" id="close-btn">close</span>
-        </li>
-        <li class="navbar-items"><a href="#">Examples</a></li>
-        <li class="navbar-items"><a href="#">Resources</a></li>
-      </ul>
+        <div class="nav-title">
+            <span class="brand">
+                <h2>PaperUI</h2>
+                <span>v1.0</span>
+            </span>
+            <span class="material-icons ml-auto" id="menu">menu</span>
+        </div>
+        <ul class="nav-links">
+            <li class="navbar-items">
+                <a href="../../documentation.html">Docs</a>
+                <span class="material-icons ml-auto" id="close-btn">close</span>
+            </li>
+            <li class="navbar-items"><a href="#">Examples</a></li>
+            <li class="navbar-items"><a href="#">Resources</a></li>
+        </ul>
     </nav>
 
     <div class="grid-container">
-      <ul class="side-navbar">
-        <h3 class="list-heading">Getting Started</h3>
-        <li class="nav-items">
-          <a class="reset-a" href="../../index.html">Introduction</a>
-        </li>
-        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+        <ul class="side-navbar">
+            <h3 class="list-heading">Getting Started</h3>
+            <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
 
-        <h3 class="list-heading">Components</h3>
-        <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
-        <li class="nav-items">
-          <a class="reset-a" href="../avatar">Avatar</a>
-        </li>
-        <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
-        <li class="nav-items">
-          <a class="reset-a" href="../button">Button</a>
-        </li>
-        <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
-        <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
-        <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
-        <li class="nav-items"><a class="reset-a active" href="../lists/">Lists</a></li>
-        <li class="nav-items"><a class="reset-a" href="../navigation/">Navigation</a></li>
-        <li class="nav-items"><a class="reset-a" href="../text utilities/">Text Utilities</a></li>
-      </ul>
-      <main class="main-content">
-        <h1>Navigation</h1>
-        <p class="content-desc">
-            Navigation tabs
-        </p>
-        <hr />
-        <h2>Default Lists</h2>
-        <p class="content-desc">
-          Use <code>.list-grp, .list-item, .list-head</code> to create default lists.
-        </p>
-        <h3>Examples</h3>
-        <div class="example-box">
-            <ul class = "list-grp">
-              <div class = "list-item list-head ">Heading</div>
-              <li class = "list-item">Lorem, ipsum.</li>
-              <li class = "list-item">Lorem, ipsum.</li>
-              <li class = "list-item">Lorem, ipsum.</li>
-              <li class = "list-item">Lorem, ipsum.</li>
-            </ul>
-        </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2520list-head%2520%2522%253EHeading%253C%252Fdiv%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%253C%252Ful%253E%250A"
-        style="height: 301px;"
-        sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <h2>Stacked Lists</h2>
-        <p class="content-desc">
-            For success use <code>.txt-success</code> class for label and <code>.success-ol</code> class for inputs
-        </p>
-        <h3>Examples</h3>
-        <div class="example-box">
-          
-        </div>
-        <h2>Stacked Lists</h2>
-        <p class="content-desc">
-          abc
-        </p>
-        <h3>Examples</h3>
-        <div class="example-box">
-            
-        </div>
-        <hr />
-        <footer class="nav-footer">
-          <i class="material-icons">chevron_left</i
-          ><a class="footer-a far-left" href="../image/">Input</a>
-          <a class="footer-a" href="../lists/">Navigation</a
-          ><i class="material-icons">chevron_right</i>
-        </footer>
-      </main>
+            <h3 class="list-heading">Components</h3>
+            <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+            <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
+            <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+            <li class="nav-items"><a class="reset-a" href="../button">Button</a></li>
+            <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+            <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+            <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+            <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+            <li class="nav-items"><a class="reset-a active" href="../navigation/">Navigation</a></li>
+            <li class="nav-items"><a class="reset-a" href="../text utilities/">Text Utilities</a></li>
+        </ul>
+        <main class="main-content">
+            <h1>Navigation</h1>
+            <p class="content-desc">Navigation tabs</p>
+            <hr />
+            <h2>Default Navbar</h2>
+            <p class="content-desc">
+
+            </p>
+            <h3>Examples</h3>
+            <div class="example-box">
+                <nav class="nav-header">
+                    <div class = "brand-name">Brand</div>
+                    <ul class = "menu-list">
+                        <li class = "menu-list-items">item1</li>
+                        <li class = "menu-list-items">item2</li>
+                        <li class = "menu-list-items">item3</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h2></h2>
+            <p class="content-desc"></p>
+            <h3>Examples</h3>
+            <div class="example-box"></div>
+            <h2>Stacked Lists</h2>
+            <p class="content-desc">abc</p>
+            <h3>Examples</h3>
+            <div class="example-box"></div>
+            <hr />
+            <footer class="nav-footer">
+                <i class="material-icons">chevron_left</i><a class="footer-a far-left" href="../lists/">Lists</a>
+                <a class="footer-a" href="../text utilities/">Text Utilities</a><i
+                    class="material-icons">chevron_right</i>
+            </footer>
+        </main>
     </div>
-  </body>
+</body>
+
 </html>
