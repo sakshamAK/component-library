@@ -45,6 +45,8 @@
     color: #dc2626;
     background: #ffffff;
 }
+
+
 .warning-ol {
     border: 1px solid #f59e0b;
     color: #f59e0b;
@@ -55,4 +57,12 @@
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     background: #ffffff;
+}
+
+.danger-ol::placeholder, .txt-danger {
+    color: #dc2626;
+}
+
+.success-ol::placeholder, .txt-success {
+    color: #32cd32;
 }
