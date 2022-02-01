@@ -60,10 +60,16 @@
         </li>
         <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
         <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
-        <li class="nav-items"><a class="reset-a active" href="../input/">Input</a></li>
+        <li class="nav-items">
+          <a class="reset-a active" href="../input/">Input</a>
+        </li>
         <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
-        <li class="nav-items"><a class="reset-a" href="../navigation/">Navigation</a></li>
-        <li class="nav-items"><a class="reset-a" href="../text utilities/">Text Utilities</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../navigation/">Navigation</a>
+        </li>
+        <li class="nav-items">
+          <a class="reset-a" href="../text utilities/">Text Utilities</a>
+        </li>
       </ul>
       <main class="main-content">
         <h1>Images</h1>
@@ -73,70 +79,113 @@
         <hr />
         <h2>Input labels</h2>
         <p class="content-desc">
-            Inputs are the most commonly used elements in forms. Use the <code>input-grp</code> class to access the input styles.
+          Inputs are the most commonly used elements in forms. Use the
+          <code>input-grp</code> class to access the input styles.
         </p>
         <h3>Examples</h3>
         <div class="example-box">
-            <form class = "form-grp">
-                <div class = "input-grp">
-                    <label for="email" >Enter your email *</label>
-                    <input type = "text" class = "txt" placeholder="Email" name = "email" required />
-                </div>
-                <div class = "input-grp">
-                    <label for="password">Enter your password *</label>
-                    <input type = "Password" class = "pwd" placeholder="Password" name = "password" />
-                </div>
-            </form>
+          <form class="form-grp">
+            <div class="input-grp">
+              <label for="email">Enter your email *</label>
+              <input
+                type="text"
+                class="txt"
+                placeholder="Email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-grp">
+              <label for="password">Enter your password *</label>
+              <input
+                type="Password"
+                class="pwd"
+                placeholder="Password"
+                name="password"
+              />
+            </div>
+          </form>
         </div>
         <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEnter%2520your%2520email%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522txt%2522%2520placeholder%253D%2522Email%2522%2520name%253D%2522email%2522%2520required%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EEnter%2520your%2520password%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522Password%2522%2520class%253D%2522pwd%2522%2520placeholder%253D%2522Password%2522%2520name%253D%2522password%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
-  style="height: 368px;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEnter%2520your%2520email%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522txt%2522%2520placeholder%253D%2522Email%2522%2520name%253D%2522email%2522%2520required%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EEnter%2520your%2520password%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522Password%2522%2520class%253D%2522pwd%2522%2520placeholder%253D%2522Password%2522%2520name%253D%2522password%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
+          style="height: 368px"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
         <h2>Validation Styles</h2>
         <p class="content-desc">
-            For success use <code>.txt-success</code> class for label and <code>.success-ol</code> class for inputs
+          For success use <code>.txt-success</code> class for label and
+          <code>.success-ol</code> class for inputs
         </p>
         <h3>Examples</h3>
         <div class="example-box">
-            <form class = "form-grp">
-                <div class = "input-grp">
-                    <label for="email" class = "txt-success">Enter your email *</label>
-                    <input type = "text" class = "txt success-ol" placeholder="Email" name = "email" required />
-                </div>
-                <div class = "input-grp">
-                    <label for="password" class = "txt-success">Enter your password *</label>
-                    <input type = "Password" class = "pwd success-ol" placeholder="Password" name = "password" />
-                </div>
-            </form>
+          <form class="form-grp">
+            <div class="input-grp">
+              <label for="email" class="txt-success">Enter your email *</label>
+              <input
+                type="text"
+                class="txt success-ol"
+                placeholder="Email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-grp">
+              <label for="password" class="txt-success"
+                >Enter your password *</label
+              >
+              <input
+                type="Password"
+                class="pwd success-ol"
+                placeholder="Password"
+                name="password"
+              />
+            </div>
+          </form>
         </div>
         <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522txt-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520email%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522txt%2520success-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522txt-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520password%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522pwd%2520success-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
-  style="height: 703px;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522txt-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520email%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522txt%2520success-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522txt-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520password%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522pwd%2520success-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
+          style="height: 703px"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
         <h2>Error Styles</h2>
         <p class="content-desc">
-            For success use <code>.txt-danger</code> class for label and <code>.danger-ol</code> class for inputs
+          For success use <code>.txt-danger</code> class for label and
+          <code>.danger-ol</code> class for inputs
         </p>
         <h3>Examples</h3>
         <div class="example-box">
-            <form class = "form-grp">
-                <div class = "input-grp">
-                    <label for="email" class = "txt-danger">Enter your email *</label>
-                    <input type = "text" class = "txt danger-ol" placeholder="Email" name = "email" required />
-                </div>
-                <div class = "input-grp">
-                    <label for="password" class = "txt-danger">Enter your password *</label>
-                    <input type = "Password" class = "pwd danger-ol" placeholder="Password" name = "password" />
-                </div>
-            </form>
+          <form class="form-grp">
+            <div class="input-grp">
+              <label for="email" class="txt-danger">Enter your email *</label>
+              <input
+                type="text"
+                class="txt danger-ol"
+                placeholder="Email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-grp">
+              <label for="password" class="txt-danger"
+                >Enter your password *</label
+              >
+              <input
+                type="Password"
+                class="pwd danger-ol"
+                placeholder="Password"
+                name="password"
+              />
+            </div>
+          </form>
         </div>
         <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522txt-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520email%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522txt%2520danger-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522txt-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520password%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522pwd%2520danger-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
-  style="height: 703px;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522txt-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520email%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522txt%2520danger-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522txt-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520password%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522pwd%2520danger-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
+          style="height: 703px"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
         <hr />
         <footer class="nav-footer">
           <i class="material-icons">chevron_left</i
