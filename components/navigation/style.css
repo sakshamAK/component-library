@@ -1,0 +1,20 @@
+.nav-header {
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+}
+
+.brand-name {
+    font-weight: 800;
+}
+
+.menu-list {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.menu-list-items {
+    list-style-type: none;
+}
