@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper UI | Ratings</title>
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-title">
+        <span class="brand">
+          <h2>PaperUI</h2>
+          <span>v1.0</span>
+        </span>
+        <span class="material-icons ml-auto" id="menu">menu</span>
+      </div>
+      <ul class="nav-links">
+        <li class="navbar-items">
+          <a href="../../documentation.html">Docs</a>
+          <span class="material-icons ml-auto" id="close-btn">close</span>
+        </li>
+        <li class="navbar-items"><a href="#">Examples</a></li>
+        <li class="navbar-items"><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+
+    <div class="grid-container">
+      <ul class="side-navbar">
+        <h3 class="list-heading">Getting Started</h3>
+        <li class="nav-items">
+          <a class="reset-a" href="../../index.html">Introduction</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+
+        <h3 class="list-heading">Components</h3>
+        <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../avatar">Avatar</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../button">Button</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+        <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+        <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+        <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../navigation/">Navigation</a>
+        </li>
+        <li class="nav-items">
+          <a class="reset-a" href="../text utilities/">Text Utilities</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="../toast/">Toast</a></li>
+        <li class="nav-items">
+          <a class="reset-a active" href="../ratings/">Ratings</a>
+        </li>
+      </ul>
+      <main class="main-content">
+        <h1>Ratings</h1>
+        <p class="content-desc">
+          Ratings are we all know those 5 stars present in the feedbacks.
+        </p>
+        <hr />
+        <h2>Ratings</h2>
+        <p class="content-desc">
+          To access ratings styles use <code>&nbsp;.ratings &nbsp;</code> class
+          names in your container.
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box">
+          <div class="ratings">
+            <i class="material-icons r-star">star_outline</i>
+            <i class="material-icons r-star">star_outline</i>
+            <i class="material-icons r-star">star_outline</i>
+            <i class="material-icons r-star">star_outline</i>
+            <i class="material-icons r-star">star_outline</i>
+          </div>
+        </div>
+
+        <hr />
+        <footer class="nav-footer">
+          <i class="material-icons">chevron_left</i
+          ><a class="footer-a far-left" href="../toast/"
+            >Toast</a
+          >
+          <a class="footer-a" href="../grids/">Grids</a
+          ><i class="material-icons">chevron_right</i>
+        </footer>
+      </main>
+    </div>
+    <script>
+      let ratingStar = document.querySelectorAll(".r-star");
+      let starContainer = document.querySelector(".ratings");
+      Object.values(ratingStar).map((star, idx) => {
+        star.addEventListener("click", () => {
+          if(star.innerText === "star_outline") for(let i = idx; i >= 0; i--) ratingStar[i].innerText = "star";
+          else for(let i = idx+1; i < ratingStar.length; i++) ratingStar[i].innerText = "star_outline";
+        })
+      })
+    </script>
+  </body>
+</html>
