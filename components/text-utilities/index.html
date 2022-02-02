@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper UI | Text Utilities</title>
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../alert/alert.css" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-title">
+        <span class="brand">
+          <h2>PaperUI</h2>
+          <span>v1.0</span>
+        </span>
+        <span class="material-icons ml-auto" id="menu">menu</span>
+      </div>
+      <ul class="nav-links">
+        <li class="navbar-items">
+          <a href="../../documentation.html">Docs</a>
+          <span class="material-icons ml-auto" id="close-btn">close</span>
+        </li>
+        <li class="navbar-items"><a href="#">Examples</a></li>
+        <li class="navbar-items"><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+
+    <div class="grid-container">
+      <ul class="side-navbar">
+        <h3 class="list-heading">Getting Started</h3>
+        <li class="nav-items">
+          <a class="reset-a" href="../../index.html">Introduction</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+
+        <h3 class="list-heading">Components</h3>
+        <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../avatar">Avatar</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../button">Button</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+        <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+        <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+        <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+        <li class="nav-items">
+          <a class="reset-a" href="../navigation/">Navigation</a>
+        </li>
+        <li class="nav-items">
+          <a class="reset-a active" href="../text-utilities/">Text Utilities</a>
+        </li>
+        <li class="nav-items"><a class="reset-a" href="../toast/">Toast</a></li>
+      </ul>
+      <main class="main-content">
+        <h1>Text Utilities</h1>
+        <p class="content-desc">
+          Basic text formatting options used to keep the webapp intact and
+          follow a particular order.
+        </p>
+        <hr />
+        <h2>Headings</h2>
+        <p class="content-desc">
+          PaperUI provides custom font-sized headings. Just simply use the tags
+          to get the custom font sizes
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box">
+          <h1>Heading 1</h1>
+          <p class="example-para">H1/44.8px Line Height/67.2px</p>
+          <h2>Heading 2</h2>
+          <p class="example-para">H1/33.6px Line Height/50.4px</p>
+          <h3>Heading 3</h3>
+          <p class="example-para">H1/26.2px Line Height/39.3px</p>
+          <h4>Heading 4</h4>
+          <p class="example-para">H1/22.4px Line Height/33.6px</p>
+          <h5>Heading 5</h5>
+          <p class="example-para">H1/18.5px Line Height/27.8px</p>
+          <h6>Heading 6</h6>
+          <p class="example-para">H1/15px Line Height/22.5px</p>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E"
+          style="height: 293px"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h2>Typography (Font Size)</h2>
+        <p class="content-desc">
+          There are five different types of font-sizes.
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box f-size">
+          <p class="xl">Lorem ipsum</p>
+          <span class="example-para">P /40px line height/60px</span>
+          <p class="lg">Lorem ipsum</p>
+          <span class="example-para">P /32px line height/48px</span>
+          <p>Lorem ipsum</p>
+          <span class="example-para">P /22.4px line height/33.6px</span>
+          <p class="sm">Lorem ipsum</p>
+          <span class="example-para">P /16px line height/24px</span>
+          <p class="xs">Lorem ipsum</p>
+          <span class="example-para">P /8px line height/12px</span>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%2520%253D%2520%2522xl%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%2520class%2520%253D%2520%2522lg%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%2520class%2520%253D%2520%2522sm%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%2520class%2520%253D%2520%2522xs%2522%253ELorem%2520ipsum%253C%252Fp%253E"
+          style="height: 272px"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h2>Typography (Font Weight)</h2>
+        <p class="content-desc">
+          Use class name .w followed by the font weight specified in the below
+          code.
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box">
+          <p class="lg w3">Light 300</p>
+          <p class="lg w4">Light 400</p>
+          <p class="lg w6">Light 600</p>
+          <p class="lg w7">Light 700</p>
+          <p class="lg w9">Light 900</p>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522lg%2520w3%2522%253ELight%2520300%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w4%2522%253ELight%2520400%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w6%2522%253ELight%2520600%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w7%2522%253ELight%2520700%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w9%2522%253ELight%2520900%253C%252Fp%253E"
+          style="height: 272px"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h2>Border Radius</h2>
+        <p class="content-desc">
+          There are four different type of border radius.
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box">
+          <div class = "br-box">
+            <div class="box s"></div>
+            <span>5px s</span>
+          </div>
+          <div class = "br-box">
+            <div class="box m"></div>
+            <span>10px m</span>
+          </div>
+          <div class = "br-box">
+            <div class="box l"></div>
+            <span>15px l</span>
+          </div>
+          <div class = "br-box">
+            <div class="box full-O"></div>
+            <span>99px full-O</span>
+          </div>
+        </div>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522box%2520s%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522box%2520m%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522box%2520l%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522box%2520full-O%2522%253E%253C%252Fdiv%253E"
+        style="height: 251px;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+        <hr />
+        <footer class="nav-footer">
+          <i class="material-icons">chevron_left</i
+          ><a class="footer-a far-left" href="../navigation/">Navigation</a>
+          <a class="footer-a" href="../toast/">Toast</a
+          ><i class="material-icons">chevron_right</i>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

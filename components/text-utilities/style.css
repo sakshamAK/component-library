@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.f-size p {
+  line-height: 1.5em;
+}
+
+.example-para {
+  font-size: 1rem;
+  margin-top: -1.5em;
+}
+
+.xl {
+  font-size: 2.5rem;
+}
+.lg {
+  font-size: 2rem;
+}
+.sm {
+  font-size: 1rem;
+}
+.xs {
+  font-size: 0.5rem;
+}
+
+.w3 {
+    font-weight: 300;
+}
+.w4 {
+    font-weight: 400;
+}
+.w6 {
+    font-weight: 600;
+}
+.w7 {
+    font-weight: 700;
+}
+.w9 {
+    font-weight: 900;
+}
+
+.box {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid black;
+}
+
+.s {
+    border-radius: 5px;
+}
+.m {
+    border-radius: 10px;
+}
+.l {
+    border-radius: 15px;
+}
+.full-O {
+    border-radius: 99px;
+}
+
+.br-box {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
