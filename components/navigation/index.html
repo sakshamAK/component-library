@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper UI | Navigation</title>
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../alert/alert.css" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-title">
+            <span class="brand">
+                <h2>PaperUI</h2>
+                <span>v1.0</span>
+            </span>
+            <span class="material-icons ml-auto" id="menu">menu</span>
+        </div>
+        <ul class="nav-links">
+            <li class="navbar-items">
+                <a href="../../documentation.html">Docs</a>
+                <span class="material-icons ml-auto" id="close-btn">close</span>
+            </li>
+            <li class="navbar-items"><a href="#">Examples</a></li>
+            <li class="navbar-items"><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="grid-container">
+        <ul class="side-navbar">
+            <h3 class="list-heading">Getting Started</h3>
+            <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
+            <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+
+            <h3 class="list-heading">Components</h3>
+            <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+            <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
+            <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+            <li class="nav-items"><a class="reset-a" href="../button">Button</a></li>
+            <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+            <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+            <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+            <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+            <li class="nav-items"><a class="reset-a active" href="../navigation/">Navigation</a></li>
+            <li class="nav-items"><a class="reset-a" href="../text-utilities/">Text Utilities</a></li>
+            <li class="nav-items"><a class="reset-a" href="../toast/">Toast</a></li>
+            <li class="nav-items"><a class="reset-a" href="../ratings/">Ratings</a></li>
+            <li class="nav-items"><a class="reset-a" href="../modals/">Modals</a></li>
+        </ul>
+        <main class="main-content">
+            <h1>Navigation</h1>
+            <p class="content-desc">Navigation tabs</p>
+            <hr />
+            <h2>Default Navbar</h2>
+            <p class="content-desc">
+              To access navbar styles use <code>.nav-header .menu-list .menu-list-items </code> class names in your container, list, and list items respectively and <code>.brand-name</code> class for the brand name.
+            </p>
+            <h3>Examples</h3>
+            <div class="example-box">
+                <nav class="nav-header">
+                    <div class = "brand-name">Brand</div>
+                    <ul class = "menu-list">
+                        <li class = "menu-list-items">item1</li>
+                        <li class = "menu-list-items">item2</li>
+                        <li class = "menu-list-items">item3</li>
+                    </ul>
+                </nav>
+            </div>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-header%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522brand-name%2522%253EBrand%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522menu-list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253Eitem1%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253Eitem2%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253Eitem3%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+            style="height: 323px;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            <h2>
+              Navbar with menu Icon
+            </h2>
+            <p class="content-desc">
+              Menu icon navbar is generally used for mobile versions.
+            </p>
+            <h3>Examples</h3>
+            <div class="example-box">
+              <nav class="nav-header">
+                <div class="brand-name">Brand</div>
+                <ul class="menu-list">
+                  <li class="menu-list-items"><i class="material-icons">menu</i></li>
+                </ul>
+              </nav>
+            </div>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-header%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522brand-name%2522%253EBrand%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522menu-list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Emenu%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+            style="height: 323px;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            <h2>Navbar with Icons</h2>
+            <p class="content-desc">
+              A general navbar with icons. Use <code>nav-icons</code> class name for icons navbar
+            </p>
+            <h3>Examples</h3>
+            <div class="example-box">
+              <nav class="nav-header">
+                <div class="brand-name">Brand</div>
+                <ul class="menu-list nav-icons">
+                  <li class="menu-list-items"><i class="material-icons">share</i></li>
+                  <li class="menu-list-items"><i class="material-icons">print</i></li>
+                  <li class="menu-list-items"><i class="material-icons">bookmark</i></li>
+                </ul>
+              </nav>
+            </div>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253B%253Cnav%2520class%253D%2522nav-header%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522brand-name%2522%253EBrand%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522menu-list%2520nav-icons%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eprint%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522menu-list-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Ebookmark%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+            style="height: 448px;margin-bottom: 3rem;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            <div class="alert dark">
+              <i class="material-icons">insights</i>
+              To use a fixed navbar, use <code>&nbsp;fix-nav&nbsp;</code> class name in the nav-header div.
+            </div>
+            <hr />
+            <footer class="nav-footer">
+                <i class="material-icons">chevron_left</i><a class="footer-a far-left" href="../lists/">Lists</a>
+                <a class="footer-a" href="../text-utilities/">Text Utilities</a><i
+                    class="material-icons">chevron_right</i>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
