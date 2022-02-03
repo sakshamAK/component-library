@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper UI | Sliders</title>
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="../button/button.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-title">
+        <span class="brand">
+          <h2>PaperUI</h2>
+          <span>v1.0</span>
+        </span>
+        <span class="material-icons ml-auto" id="menu">menu</span>
+      </div>
+      <ul class="nav-links">
+        <li class="navbar-items">
+          <a href="../../documentation.html">Docs</a>
+          <span class="material-icons ml-auto" id="close-btn">close</span>
+        </li>
+        <li class="navbar-items"><a href="#">Examples</a></li>
+        <li class="navbar-items"><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+
+    <div class="grid-container">
+      <ul class="side-navbar">
+        <h3 class="list-heading">Getting Started</h3>
+        <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
+        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+
+        <h3 class="list-heading">Components</h3>
+        <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+        <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
+        <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+        <li class="nav-items"><a class="reset-a" href="../button">Button</a></li>
+        <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+        <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+        <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+        <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+        <li class="nav-items"><a class="reset-a" href="../navigation/">Navigation</a></li>
+        <li class="nav-items"><a class="reset-a" href="../text utilities/">Text-Utilities</a></li>
+        <li class="nav-items"><a class="reset-a" href="../toast/">Toast</a></li>
+        <li class="nav-items"><a class="reset-a" href="../ratings/">Ratings</a></li>
+        <li class="nav-items"><a class="reset-a" href="../modals/">Modals</a></li>
+        <li class="nav-items"><a class="reset-a" href="../grid/">Grids</a></li>
+        <li class="nav-items"><a class="reset-a active" href="../slider/">Sliders</a></li>
+      </ul>
+      <main class="main-content">
+        <h1>Slider</h1>
+        <p class="content-desc">
+          Slider is a horizontal bar that helps you choose a value from a range provided.
+        </p>
+        <hr />
+
+        <h2>Smooth Slider</h2>
+        <p class="content-desc">
+          Runs smoothly without step skiping.
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box">
+          <div class="slide">
+            <input type = "range" min = "500" max = "5000" value = "1500" />
+          </div>
+        </div>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slide%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%2522500%2522%2520max%253D%25225000%2522%2520value%253D%25221500%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+        style="height: 268px;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+        <h2>Skip Slider</h2>
+        <p class="content-desc">
+          Runs with step skiping.
+        </p>
+        <h3>Examples</h3>
+        <div class="example-box">
+          <div class="slide">
+            <input type = "range" list = "tickmark" min = "500" max = "5000" step = "500" value = "1500" />
+            <datalist id="tickmark">
+              <option value="500" label = "500"></option>
+              <option value="1000"></option>
+              <option value="1500"></option>
+              <option value="2000"></option>
+              <option value="2500"></option>
+              <option value="3000"></option>
+              <option value="3500"></option>
+              <option value="4000"></option>
+              <option value="4500"></option>
+              <option value="5000"></option>
+            </datalist>
+          </div>
+        </div>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slide%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522range%2522%250A%2520%2520%2520%2520list%253D%2522tickmark%2522%250A%2520%2520%2520%2520min%253D%2522500%2522%250A%2520%2520%2520%2520max%253D%25225000%2522%250A%2520%2520%2520%2520step%253D%2522500%2522%250A%2520%2520%2520%2520value%253D%25221500%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cdatalist%2520id%253D%2522tickmark%2522%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%2522500%2522%2520label%253D%2522500%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25221000%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25221500%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25222000%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25222500%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25223000%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25223500%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25224000%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25224500%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25225000%2522%253E%253C%252Foption%253E%250A%2520%2520%253C%252Fdatalist%253E%250A%253C%252Fdiv%253E%250A"
+        style="height: 660px;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+        <hr />
+        <footer class="nav-footer">
+          <i class="material-icons">chevron_left</i
+          ><a class="footer-a far-left" href="../modals/"
+            >Modals</a
+          >
+          <a class="footer-a" href="../slider/">Slider</a
+          ><i class="material-icons">chevron_right</i>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

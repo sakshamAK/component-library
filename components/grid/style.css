@@ -1,0 +1,72 @@
+.grid-box {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.rc-2 {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.rc-3 {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cells {
+    background: var(--primary-color);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-white);
+}
+
+.grid-3:nth-child(2n), .grid-2:nth-child(2), .grid-2:nth-child(3) {
+    background: var(--select-color);
+}
+.grid-3:nth-child(2n-1), .grid-2:nth-child(1), .grid-2:nth-child(4) {
+    background: var(--primary-color);
+}
+
+.desk-grid {
+    grid-auto-rows: 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "side body body"
+    "side body body"
+    "side body body"
+    "footer footer footer"
+    ;
+}
+
+.mob-grid {
+    grid-template-areas: 
+    "nav"
+    "side"
+    "body"
+    "footer"
+    ;
+}
+
+.desk-grid .grid-cells {
+    height: 100%;
+    padding: 2rem 0;
+}
+
+.navbar {
+    grid-area: nav;
+}
+.sidebar {
+    grid-area: side;
+    background: var(--success);
+}
+.grid-body {
+    grid-area: body;
+    background: var(--danger);
+}
+.grid-footer {
+    grid-area: footer;
+    background: var(--select-color);
+}
