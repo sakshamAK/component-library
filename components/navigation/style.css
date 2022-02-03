@@ -1,0 +1,52 @@
+.nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+    padding: 0 2rem;
+}
+
+.brand-name {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.menu-list-items {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.menu-list-items:hover {
+    background: #3f64f3;
+}
+
+.nav-icons {
+    padding: 0.5rem 0;
+}
+
+.nav-icons .menu-list-items {
+    padding: 0;
+}
+
+.nav-icons .menu-list-items .material-icons{
+    padding: 0.5rem;
+}
+.nav-icons .menu-list-items:hover {
+    border-radius: 50%;
+}
+
+.fix-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
