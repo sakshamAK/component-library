@@ -1,21 +1,30 @@
+:root {
+    --primary: #3454D1;
+    --secondary: #71717a;
+    --success: #32cd32;
+    --danger: #dc2626;
+    --warning: #f59e0b;
+    --bg-white: #ffffff;
+}
+
 
 .primary {
-    background-color: #3454D1;
+    background-color: var(--primary);
 }
 
 .secondary {
-    background-color: #71717a;
+    background-color: var(--secondary);
 }
 
 .success {
-    background-color: #32cd32;
+    background-color: var(--success);
 }
 
 .danger {
-    background-color: #dc2626;
+    background-color: var(--danger);
 }
 .warning {
-    background-color: #f59e0b;
+    background-color: var(--warning);
 }
 
 .dark {
@@ -23,36 +32,46 @@
 }
 
 .primary-ol {
-    border: 1px solid #3454D1;
-    color: #3454D1;
-    background: #ffffff;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: var(--bg-white);
 }
 
 .secondary-ol {
-    border: 1px solid #71717a;
-    color: #71717a;
-    background: #ffffff;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    background: var(--bg-white);
 }
 
 .success-ol {
-    border: 1px solid #32cd32;
-    color: #32cd32;
-    background: #ffffff;
+    border: 1px solid var(--success);
+    color: var(--success);
+    background: var(--bg-white);
 }
 
 .danger-ol {
-    border: 1px solid #dc2626;
-    color: #dc2626;
-    background: #ffffff;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    background: var(--bg-white);
 }
+
+
 .warning-ol {
-    border: 1px solid #f59e0b;
-    color: #f59e0b;
-    background: #ffffff;
+    border: 1px solid var(--warning);
+    color: var(--warning);
+    background: var(--bg-white);
 }
 
 .dark-ol {
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
-    background: #ffffff;
+    background: var(--bg-white);
+}
+
+.danger-ol::placeholder, .txt-danger {
+    color: var(--danger);
+}
+
+.success-ol::placeholder, .txt-success {
+    color: var(--success);
 }
