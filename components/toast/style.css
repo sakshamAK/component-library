@@ -1,0 +1,31 @@
+.example-box {
+    flex-direction: column;
+}
+
+.toast {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    border-radius: 5px;
+    color: var(--bg-white);
+}
+
+.toast .btn:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.toast .material-icons {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.fix-toast {
+    position: fixed;
+    bottom: 1rem;
+    z-index:2;
+}
