@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+:root {
+    --primary-color: #FF6619;
+    --secondary-color: #1e1e1e;
+    --font-white: #fefefe;
+    --select-color: #009FFD;
+}
 
 * {
     box-sizing: border-box;
