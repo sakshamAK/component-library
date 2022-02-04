@@ -1,5 +1,5 @@
 const menu = document.querySelector("#menu");
-const list = document.querySelector(".links");
+const list = document.querySelector(".nav-links");
 const close = document.querySelector("#close-btn");
 menu.addEventListener("click", () => {
     list.classList.add("show")
