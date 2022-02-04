@@ -7,7 +7,7 @@
     <title>Paper UI | Text Utilities</title>
     <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/sidebar.css" />
-    <link rel="stylesheet" href="../alert/alert.css" />
+    <link rel="stylesheet" href="../alert/style.css" />
     <link rel="stylesheet" href="../../css/colors.css" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -19,13 +19,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <script src="../../script.js" defer></script>
   </head>
 
   <body>
     <nav class="navbar">
       <div class="nav-title">
         <span class="brand">
-          <h2>PaperUI</h2>
+          <h2><a href="../../">PaperUI</a></h2>
           <span>v1.0</span>
         </span>
         <span class="material-icons ml-auto" id="menu">menu</span>
@@ -44,12 +47,17 @@
       <ul class="side-navbar">
         <h3 class="list-heading">Getting Started</h3>
         <li class="nav-items">
-          <a class="reset-a" href="../../index.html">Introduction</a>
-        </li>
-        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
-
+          <a class="reset-a" href="../../documentation.html">Introduction</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/colors/">Color</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/typography/">Typography</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+          </li>
         <h3 class="list-heading">Components</h3>
         <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
         <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
@@ -74,6 +82,7 @@
           Basic text formatting options used to keep the webapp intact and
           follow a particular order.
         </p>
+        <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/text-utilities/style.css" /></code></pre>
         <hr />
         <h2>Headings</h2>
         <p class="content-desc">
@@ -95,12 +104,16 @@
           <h6>Heading 6</h6>
           <p class="example-para">H1/15px Line Height/22.5px</p>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E"
-          style="height: 293px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </code>
+        </pre>
         <h2>Typography (Font Size)</h2>
         <p class="content-desc">
           There are five different types of font-sizes.
@@ -118,12 +131,15 @@
           <p class="xs">Lorem ipsum</p>
           <span class="example-para">P /8px line height/12px</span>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%2520%253D%2520%2522xl%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%2520class%2520%253D%2520%2522lg%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%2520class%2520%253D%2520%2522sm%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%253Cp%2520class%2520%253D%2520%2522xs%2522%253ELorem%2520ipsum%253C%252Fp%253E"
-          style="height: 272px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <p class="xl">Lorem ipsum</p>
+            <p class="lg">Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p class="sm">Lorem ipsum</p>
+            <p class="xs">Lorem ipsum</p>
+            </code>
+        </pre>
         <h2>Typography (Font Weight)</h2>
         <p class="content-desc">
           Use class name .w followed by the font weight specified in the below
@@ -137,12 +153,15 @@
           <p class="lg w7">Light 700</p>
           <p class="lg w9">Light 900</p>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522lg%2520w3%2522%253ELight%2520300%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w4%2522%253ELight%2520400%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w6%2522%253ELight%2520600%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w7%2522%253ELight%2520700%253C%252Fp%253E%250A%253Cp%2520class%253D%2522lg%2520w9%2522%253ELight%2520900%253C%252Fp%253E"
-          style="height: 272px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <p class="lg w3">Light 300</p>
+            <p class="lg w4">Light 400</p>
+            <p class="lg w6">Light 600</p>
+            <p class="lg w7">Light 700</p>
+            <p class="lg w9">Light 900</p>
+          </code>
+        </pre>
         <h2>Border Radius</h2>
         <p class="content-desc">
           There are four different type of border radius.
@@ -166,11 +185,26 @@
             <span>99px full-O</span>
           </div>
         </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522box%2520s%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522box%2520m%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522box%2520l%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522box%2520full-O%2522%253E%253C%252Fdiv%253E"
-        style="height: 251px;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class = "br-box">
+              <div class="box s"></div>
+              <span>5px s</span>
+            </div>
+            <div class = "br-box">
+              <div class="box m"></div>
+              <span>10px m</span>
+            </div>
+            <div class = "br-box">
+              <div class="box l"></div>
+              <span>15px l</span>
+            </div>
+            <div class = "br-box">
+              <div class="box full-O"></div>
+              <span>99px full-O</span>
+            </div>
+          </code>
+        </pre>
         <hr />
         <footer class="nav-footer">
           <i class="material-icons">chevron_left</i
@@ -180,5 +214,9 @@
         </footer>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
   </body>
 </html>

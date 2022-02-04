@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <link rel="stylesheet" href="./components.css">
     <title>PaperUI | Docs</title>
 </head>
 <body>
@@ -18,13 +23,87 @@
           <span class="material-icons ml-auto" id = "menu">menu</span>
         </div>
         <ul class="nav-links">
-          <li class = "navbar-items"><a class = "btn-docs" href = "./documentation.html">Docs</a> 
+          <li class = "navbar-items"><a href = "./documentation.html">Docs</a> 
             <span class = "material-icons" id = "close-btn">close</span>
           </li>
           <li class = "navbar-items"><a href = "#">Examples</a></li>
           <li class = "navbar-items"><a href = "#">Resources</a></li>
         </ul>
       </nav>
-      <div  style = "padding: 1rem; margin: 2rem; background-color: #ff5555; color : white; text-align: center;"><a href = "./components/alert/" style = "display: block; color: white; text-decoration: none;">Visit library</a></div>
-  </body>
+      <div class="grid-container">
+        <ul class="side-navbar">
+          <h3 class="list-heading">Getting Started</h3>
+          <li class="nav-items"><a class="reset-a active" href="#">Introduction</a></li>
+          <li class="nav-items"><a class="reset-a" href="./introduction/colors/">Color</a></li>
+          <li class="nav-items"><a class="reset-a" href="./introduction/typography/">Typography</a></li>
+          <li class="nav-items"><a class="reset-a" href="./introduction/conclusion/">Conclusion</a></li>
+          
+          <h3 class="list-heading">Components</h3>
+          <li class="nav-items"><a class="reset-a" href="./components/alert/">Alert</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/avatar">Avatar</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/badge">Badge</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/button">Button</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/card">Card</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/image/">Image</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/input/">Input</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/lists/">Lists</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/navigation/">Navigation</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/text-utilities/">Text Utilities</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/toast/">Toast</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/ratings/">Ratings</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/modals/">Modals</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/grid/">Grids</a></li>
+          <li class="nav-items"><a class="reset-a" href="./components/slider/">Slider</a></li>
+        </ul>
+        <main class="main-content">
+          <h1>Introduction</h1>
+          <p class="main-content">
+            PaperUI is a free, open-source CSS framework that builds responsive designs using pre-defined classes, components, and utilities. It is focused more on development, either it's others or itself, and hence keeps growing.
+          </p>
+          <h1>Installation Guide</h1>
+          <p class="main-content">
+            To use this framework, you simply need to put the below link in your header file above all other style sheets.
+          </p>
+          <pre>
+            <code class = "html">
+        &lt;!--HTML--&gt;
+        &lt;link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components.css" /&gt;
+            </code>
+          </pre>
+          <pre>
+            <code class = "CSS">
+        /*CSS*/
+        @import url("https://ak-paper-ui.netlify.app/components.css")
+            </code>
+          </pre>
+          <p class="main-content">Seperate links for indivisual components are also provided in their respective sections.</p>
+          <hr />
+          <h1>Customisation</h1>
+        <p class="main-content">
+          Athough PaperUI tries to implement its best but sometimes user wants their own styles dealing. For that you can simply add your own class to the existing classes.
+        </p>
+        <h2>Example</h2>
+        <div class="example-box">
+          <div class="btn my-color">Primary</div>
+        </div>
+        <pre>
+          <code>
+            &lt;div class = "btn my-color"&gt;Primary&lt;/div&gt;
+            &lt;style&gt;
+              .my-color {
+                background: salmon;
+              }
+            &lt;/style&gt;
+          </code>
+        </pre>
+        <hr />
+        <footer class="nav-footer">
+          <a class="footer-a" href="./introduction/colors/">Colors</a
+            ><i class="material-icons">chevron_right</i>
+        </footer>
+      </main>
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </body>
 </html>

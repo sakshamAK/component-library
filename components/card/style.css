@@ -9,6 +9,7 @@
 }
 
 .card {
+    width: 60vh;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -49,14 +50,6 @@
     border-radius: 50%;
 }
 
-.card p {
-    width: 20rem;
-}
-
-.wc {
-    width: 23rem;
-}
-
 .card .c-footer {
     display: inline;
 }
@@ -68,7 +61,12 @@
 
 .img-txt-container {
     position: relative;
-    width: 20rem;
+    /* width: 20rem; */
+}
+
+.card img {
+    object-fit: contain;
+    /* width: 100%; */
 }
 
 .txt-over-img {
@@ -119,4 +117,37 @@
     position: absolute;
     right: 0.5em;
 }
+
+.alt-text {
+    display: none;
+}
 /***** */
+
+/***** MEDIA QUERIES */
+
+@media screen and (max-width: 490px){
+    .btn {
+        font-size: 3vw;
+        padding: 0.3rem 0.5rem;
+    }
+    .card .material-icons {
+        font-size: 5vw;
+    }
+    .example-box {
+        width: 80vw;
+    }
+    .card {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 416px){
+    .resp-hide {
+        display: none;
+    }
+    .alt-text {
+        display: block;
+    }
+}
+
+/*****  */

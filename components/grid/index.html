@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/sidebar.css" />
     <link rel="stylesheet" href="../../css/colors.css" />
-    <link rel="stylesheet" href="../button/button.css" />
+    <link rel="stylesheet" href="../button/style.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -19,13 +19,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <script src="../../script.js" defer></script>
   </head>
 
   <body>
     <nav class="navbar">
       <div class="nav-title">
         <span class="brand">
-          <h2>PaperUI</h2>
+          <h2><a href="../../">PaperUI</a></h2>
           <span>v1.0</span>
         </span>
         <span class="material-icons ml-auto" id="menu">menu</span>
@@ -43,11 +46,18 @@
     <div class="grid-container">
       <ul class="side-navbar">
         <h3 class="list-heading">Getting Started</h3>
-        <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
-
+        <li class="nav-items">
+          <a class="reset-a" href="../../documentation.html">Introduction</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/colors/">Color</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/typography/">Typography</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+          </li>
         <h3 class="list-heading">Components</h3>
         <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
         <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
@@ -70,6 +80,7 @@
         <p class="content-desc">
           A grid is a layout style that helps you arrange your content in a particular order
         </p>
+        <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/grid/style.css" /></code></pre>
         <hr />
         <h2>2x2 Grid</h2>
         <p class="content-desc">
@@ -85,11 +96,16 @@
             <div class="grid-2 grid-cells">block(2, 2)</div>
           </div>
         </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-box%2520rc-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-2%2520grid-cells%2522%253Eblock%281%252C%25201%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-2%2520grid-cells%2522%253Eblock%281%252C%25202%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-2%2520grid-cells%2522%253Eblock%282%252C%25201%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-2%2520grid-cells%2522%253Eblock%282%252C%25202%29%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-        style="height: 330px;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class="grid-box rc-2">
+              <div class="grid-2 grid-cells">block(1, 1)</div>
+              <div class="grid-2 grid-cells">block(1, 2)</div>
+              <div class="grid-2 grid-cells">block(2, 1)</div>
+              <div class="grid-2 grid-cells">block(2, 2)</div>
+            </div>
+          </code>
+        </pre>
         <h2>3x3 Grid</h2>
         <p class="content-desc">
           To access grid styles use <code>.grid-box .rc-3 </code> class
@@ -109,11 +125,21 @@
             <div class="grid-3 grid-cells">block(3, 3)</div>
           </div>
         </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-box%2520rc-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%281%252C%25201%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%281%252C%25202%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%281%252C%25203%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%282%252C%25201%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%282%252C%25202%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%282%252C%25203%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%283%252C%25201%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%283%252C%25202%29%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-3%2520grid-cells%2522%253Eblock%283%252C%25203%29%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-        style="height: 433px;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class="grid-box rc-3">
+              <div class="grid-3 grid-cells">block(1, 1)</div>
+              <div class="grid-3 grid-cells">block(1, 2)</div>
+              <div class="grid-3 grid-cells">block(1, 3)</div>
+              <div class="grid-3 grid-cells">block(2, 1)</div>
+              <div class="grid-3 grid-cells">block(2, 2)</div>
+              <div class="grid-3 grid-cells">block(2, 3)</div>
+              <div class="grid-3 grid-cells">block(3, 1)</div>
+              <div class="grid-3 grid-cells">block(3, 2)</div>
+              <div class="grid-3 grid-cells">block(3, 3)</div>
+            </div>
+          </code>
+        </pre>
         <h2>Desktop Layout</h2>
         <p class="content-desc">
           To access grid styles use <code>.grid-box .desk-grid</code> class
@@ -128,11 +154,16 @@
             <div class="grid-footer grid-cells">footer</div>
           </div>
         </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-box%2520desk-grid%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navbar%2520grid-cells%2522%253ENavbar%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522sidebar%2520grid-cells%2522%253Esidebar%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-body%2520grid-cells%2522%253Ebody%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-footer%2520grid-cells%2522%253Efooter%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-        style="height: 330px;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class="grid-box desk-grid">
+              <div class="navbar grid-cells">Navbar</div>
+              <div class="sidebar grid-cells">sidebar</div>
+              <div class="grid-body grid-cells">body</div>
+              <div class="grid-footer grid-cells">footer</div>
+            </div>
+          </code>
+        </pre>
         <h2>Mobile Layout</h2>
         <p class="content-desc">
           To access grid styles use <code>.grid-box .mob-grid </code> class
@@ -147,11 +178,16 @@
             <div class="grid-footer grid-cells">footer</div>
           </div>
         </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-box%2520mob-grid%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navbar%2520grid-cells%2522%253ENavbar%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522sidebar%2520grid-cells%2522%253Esidebar%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-body%2520grid-cells%2522%253Ebody%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-footer%2520grid-cells%2522%253Efooter%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-        style="height: 330px;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class="grid-box mob-grid">
+              <div class="navbar grid-cells">Navbar</div>
+              <div class="sidebar grid-cells">sidebar</div>
+              <div class="grid-body grid-cells">body</div>
+              <div class="grid-footer grid-cells">footer</div>
+            </div>
+          </code>
+        </pre>
         <hr />
         <footer class="nav-footer">
           <i class="material-icons">chevron_left</i
@@ -163,5 +199,9 @@
         </footer>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
   </body>
 </html>

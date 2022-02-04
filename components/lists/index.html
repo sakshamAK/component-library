@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../css/sidebar.css" />
     <link rel="stylesheet" href="../../css/colors.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
     <link
       rel="shortcut icon"
       href="../../images/logo.svg"
@@ -42,7 +44,7 @@
     <div class="grid-container">
       <ul class="side-navbar">
         <h3 class="list-heading">Getting Started</h3>
-        <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
+        <li class="nav-items"><a class="reset-a" href="../../documentation.html">Introduction</a></li>
         <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
         <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
         <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
@@ -86,12 +88,18 @@
             <li class="list-item">Lorem, ipsum.</li>
           </ul>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2520list-head%2520%2522%253EHeading%253C%252Fdiv%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%253C%252Ful%253E%250A"
-          style="height: 301px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        
+        <pre>
+          <code>
+            &lt;ul class="list-grp"&gt;
+              &lt;div class="list-item list-head"&gt;Heading&lt;/div&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
         <h2>Spaced Lists</h2>
         <p class="content-desc">
           Use <code>.space-list</code> to create a spaced list.
@@ -106,12 +114,17 @@
             <li class="list-item">Lorem, ipsum.</li>
           </ul>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cul%2520class%253D%2522list-grp%2520space-list%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520list-head%2522%253EHeader%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ELorem%252C%2520ipsum.%253C%252Fli%253E%250A%253C%252Ful%253E%250A"
-          style="height: 301px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code>
+            &lt;ul class="list-grp space-list"&gt;
+              &lt;li class="list-item list-head"&gt;Header&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+              &lt;li class="list-item"&gt;Lorem, ipsum.&lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
         <h2>Stacked Lists</h2>
         <p class="content-desc">List used for notifications in a web app.</p>
         <h3>Examples</h3>
@@ -123,11 +136,16 @@
             <li class="list-item">Notification 4</li>
           </ul>
         </div>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-grp%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ENotification%25201%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ENotification%25202%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ENotification%25203%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ENotification%25204%253C%252Fli%253E%250A%253C%252Ful%253E%250A"
-        style="height: 279px;"
-        sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <pre>
+          <code>
+            &lt;ul class="list-grp"&gt;
+              &lt;li class="list-item"&gt;Notification 1&lt;/li&gt;
+              &lt;li class="list-item"&gt;Notification 2&lt;/li&gt;
+              &lt;li class="list-item"&gt;Notification 3&lt;/li&gt;
+              &lt;li class="list-item"&gt;Notification 4&lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
         <hr />
         <footer class="nav-footer">
           <i class="material-icons">chevron_left</i
@@ -137,5 +155,7 @@
         </footer>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>

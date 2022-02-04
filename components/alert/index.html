@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PaperUI | Alerts</title>
-    <link rel="stylesheet" href="alert.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../css/colors.css" />
     <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
     <script src="../../script.js" defer></script>
   </head>
 
@@ -16,7 +18,7 @@
     <nav class="navbar">
       <div class="nav-title">
         <span class="brand">
-          <h2>PaperUI</h2>
+          <h2><a href = "../../">PaperUI</a></h2>
           <span>v1.0</span>
         </span>
         <span class="material-icons ml-auto" id="menu">menu</span>
@@ -34,10 +36,10 @@
     <div class="grid-container">
       <ul class="side-navbar">
         <h3 class="list-heading">Getting Started</h3>
-        <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
+        <li class="nav-items"><a class="reset-a" href="../../documentation.html">Introduction</a></li>
+        <li class="nav-items"><a class="reset-a" href="../../introduction/colors/">Color</a></li>
+        <li class="nav-items"><a class="reset-a" href="../../introduction/typography/">Typography</a></li>
+        <li class="nav-items"><a class="reset-a" href="../../introduction/conclusion/">Conclusion</a></li>
         
         <h3 class="list-heading">Components</h3>
         <li class="nav-items"><a class="reset-a active" href="../alert">Alert</a></li>
@@ -62,6 +64,7 @@
           An alert is a short message that only pops up when some information is
           needed to be pass on to a user on a certain action.
         </p>
+        <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/alert/style.css" /></code></pre>
         <hr />
         <h2>Default Alerts</h2>
         <p class="content-desc">
@@ -89,11 +92,28 @@
             <b>Dark!</b> This is a Dark Alert - Check it now!
           </div>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%2520%253D%2520%2522alert%2520primary%2522%253E%250A%2520%2520%2520%2520%253Cb%253EPrimary%21%253C%252Fb%253E%2520This%2520is%2520a%2520Primary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520secondary%2522%253E%250A%2520%2520%2520%2520%253Cb%253ESecondary%21%253C%252Fb%253E%2520This%2520is%2520a%2520Secondary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520success%2522%253E%250A%2520%2520%2520%2520%253Cb%253ESuccess%21%253C%252Fb%253E%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520danger%2522%253E%250A%2520%2520%2520%2520%253Cb%253EDanger%21%253C%252Fb%253E%2520This%2520is%2520a%2520Danger%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520warning%2522%253E%250A%2520%2520%2520%2520%253Cb%253EWarning%21%253C%252Fb%253E%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520dark%2522%253E%250A%2520%2520%2520%2520%253Cb%253EDark%21%253C%252Fb%253E%2520This%2520is%2520a%2520Dark%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class = "html exec-code">
+            <div class="alert primary">
+              <b>Primary!</b> This is a Primary Alert - Check it now!
+            </div>
+            <div class="alert secondary">
+              <b>Secondary!</b> This is a Secondary Alert - Check it now!
+            </div>
+            <div class="alert success">
+              <b>Success!</b> This is a Success Alert - Check it now!
+            </div>
+            <div class="alert danger">
+              <b>Danger!</b> This is a Danger Alert - Check it now!
+            </div>
+            <div class="alert warning">
+              <b>Warning!</b> This is a Warning Alert - Check it now!
+            </div>
+            <div class="alert dark">
+              <b>Dark!</b> This is a Dark Alert - Check it now!
+            </div>
+          </code>
+        </pre>
         <h2>Outline Alerts</h2>
         <p class="content-desc">
           Outline alerts are another variants of default alerts with border and
@@ -120,11 +140,28 @@
             <b>Dark!</b> This is a Dark Alert - Check it now!
           </div>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%2520%253D%2520%2522alert%2520primary-ol%2522%253E%250A%2520%2520%2520%2520%253Cb%253EPrimary%21%253C%252Fb%253E%2520This%2520is%2520a%2520Primary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520secondary-ol%2522%253E%250A%2520%2520%2520%2520%253Cb%253ESecondary%21%253C%252Fb%253E%2520This%2520is%2520a%2520Secondary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520success-ol%2522%253E%250A%2520%2520%2520%2520%253Cb%253ESuccess%21%253C%252Fb%253E%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520danger-ol%2522%253E%250A%2520%2520%2520%2520%253Cb%253EDanger%21%253C%252Fb%253E%2520This%2520is%2520a%2520Danger%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520warning-ol%2522%253E%250A%2520%2520%2520%2520%253Cb%253EWarning%21%253C%252Fb%253E%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520dark-ol%2522%253E%250A%2520%2520%2520%2520%253Cb%253EDark%21%253C%252Fb%253E%2520This%2520is%2520a%2520Dark%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class="alert primary-ol">
+              <b>Primary!</b> This is a Primary Alert - Check it now!
+            </div>
+            <div class="alert secondary-ol">
+              <b>Secondary!</b> This is a Secondary Alert - Check it now!
+            </div>
+            <div class="alert success-ol">
+              <b>Success!</b> This is a Success Alert - Check it now!
+            </div>
+            <div class="alert danger-ol">
+              <b>Danger!</b> This is a Danger Alert - Check it now!
+            </div>
+            <div class="alert warning-ol">
+              <b>Warning!</b> This is a Warning Alert - Check it now!
+            </div>
+            <div class="alert dark-ol">
+              <b>Dark!</b> This is a Dark Alert - Check it now!
+            </div>
+          </code>
+        </pre>
         <h2>Icons Alerts</h2>
         <p class="content-desc">
           Icons alerts displays icons with the message.
@@ -148,12 +185,26 @@
             <b>Warning!</b> This is a Warning Alert - Check it now!
           </div>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=76px&ln=false&fl=1&fm=Hack&fs=14px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%2520%253D%2520%2522alert%2520primary-ol%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Eerror%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cb%253EPrimary%21%253C%252Fb%253E%2520This%2520is%2520a%2520Primary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520success-ol%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Echeck_circle%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cb%253ESuccess%21%253C%252Fb%253E%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520danger-ol%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Enew_releases%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cb%253EDanger%21%253C%252Fb%253E%2520This%2520is%2520a%2520Danger%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%2520%253D%2520%2522alert%2520warning-ol%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Ewarning%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cb%253EWarning%21%253C%252Fb%253E%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%253C%252Fdiv%253E"
-          style="height: 571px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <div class="alert primary-ol">
+              <i class="material-icons">error</i>
+              <b>Primary!</b> This is a Primary Alert - Check it now!
+            </div>
+            <div class="alert success-ol">
+              <i class="material-icons">check_circle</i>
+              <b>Success!</b> This is a Success Alert - Check it now!
+            </div>
+            <div class="alert danger-ol">
+              <i class="material-icons">new_releases</i>
+              <b>Danger!</b> This is a Danger Alert - Check it now!
+            </div>
+            <div class="alert warning-ol">
+              <i class="material-icons">warning</i>
+              <b>Warning!</b> This is a Warning Alert - Check it now!
+            </div>
+          </code>
+        </pre>
         <hr />
         <footer class="nav-footer">
           <a class="footer-a" href="../avatar">Avatar</a
@@ -161,5 +212,7 @@
         </footer>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>

@@ -1,3 +1,12 @@
+/*****DOCUMENT COLORS  */
+:root {
+    --primary-color: #FF6619;
+    --secondary-color: #1e1e1e;
+    --font-white: #fefefe;
+    --select-color: #009FFD;
+}
+/*****  */
+
 :root {
     --primary: #3454D1;
     --secondary: #71717a;

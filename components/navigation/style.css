@@ -50,3 +50,16 @@
     top: 0;
     left: 0;
 }
+.alt-text{
+    display: none;
+}
+
+
+@media screen and (max-width: 450px) {
+    .resp-hide {
+        display: none;
+    }
+    .alt-text {
+        display: block;
+    }
+}

@@ -8,20 +8,23 @@
     <title>Paper UI | Toast</title>
     <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/sidebar.css" />
-    <link rel="stylesheet" href="../button/button.css" />
-    <link rel="stylesheet" href="../alert/alert.css" />
+    <link rel="stylesheet" href="../button/style.css" />
+    <link rel="stylesheet" href="../alert/style.css" />
     <link rel="stylesheet" href="../../css/colors.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <script src="../../script.js" defer></script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="nav-title">
             <span class="brand">
-                <h2>PaperUI</h2>
-                <span>v1.0</span>
+              <h2><a href="../../">PaperUI</a></h2>
+              <span>v1.0</span>
             </span>
             <span class="material-icons ml-auto" id="menu">menu</span>
         </div>
@@ -38,11 +41,18 @@
     <div class="grid-container">
         <ul class="side-navbar">
             <h3 class="list-heading">Getting Started</h3>
-            <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
-            <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-            <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-            <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
-
+            <li class="nav-items">
+              <a class="reset-a" href="../../documentation.html">Introduction</a>
+              </li>
+              <li class="nav-items">
+              <a class="reset-a" href="../../introduction/colors/">Color</a>
+              </li>
+              <li class="nav-items">
+              <a class="reset-a" href="../../introduction/typography/">Typography</a>
+              </li>
+              <li class="nav-items">
+              <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+              </li>
             <h3 class="list-heading">Components</h3>
             <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
             <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
@@ -64,6 +74,7 @@
         <main class="main-content">
             <h1>Toast</h1>
             <p class="content-desc">Toast is a message that appears on bottom of the page.</p>
+            <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/toast/style.css" /></code></pre>
             <hr />
             <h2>Default Toast</h2>
             <p class="content-desc">
@@ -77,11 +88,15 @@
                   <i class="material-icons">close</i>
                 </div>
             </div>
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520primary%2522%253E%250A%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
-            style="height: 293px;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            <pre>
+              <code class="html exec-code">
+                <div class="toast primary">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn primary">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+              </code>
+            </pre>
             <h2>
               Colored Toast
             </h2>
@@ -116,14 +131,38 @@
                 <i class="material-icons">close</i>
               </div>
             </div>
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520primary%2522%253E%250A%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%2520%2520%250A%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn%2520primary%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520warning%2522%253E%250A%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%2520%2520%250A%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn%2520warning%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520danger%2522%253E%250A%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%2520%2520%250A%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn%2520danger%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520success%2522%253E%250A%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%2520%2520%250A%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn%2520success%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520dark%2522%253E%250A%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%2520%2520%250A%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn%2520dark%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-            style="height: 684px;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            <pre>
+              <code class="html exec-code">
+                <div class="toast primary">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn primary">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast warning">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn warning">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast danger">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn danger">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast success">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn success">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast dark">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn dark">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+              </code>
+            </pre>
             <div class="alert dark">
               <i class="material-icons">insights</i>
-              To use a fixed toast, use <code>&nbsp;fix-toast&nbsp;</code> class name in the toast div.
+              To use a fixed toast, use .fix-toast class name in the toast div.
             </div>
             <hr />
             <footer class="nav-footer">
@@ -133,6 +172,10 @@
             </footer>
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 
 </html>

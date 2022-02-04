@@ -18,13 +18,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <script src="../../script.js" defer></script>
   </head>
 
   <body>
     <nav class="navbar">
       <div class="nav-title">
         <span class="brand">
-          <h2>PaperUI</h2>
+          <h2><a href="../../">PaperUI</a></h2>
           <span>v1.0</span>
         </span>
         <span class="material-icons ml-auto" id="menu">menu</span>
@@ -42,11 +45,18 @@
     <div class="grid-container">
       <ul class="side-navbar">
         <h3 class="list-heading">Getting Started</h3>
-        <li class="nav-items"><a class="reset-a" href="../../index.html">Introduction</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-        <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
-
+        <li class="nav-items">
+          <a class="reset-a" href="../../documentation.html">Introduction</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/colors/">Color</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/typography/">Typography</a>
+          </li>
+          <li class="nav-items">
+          <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+          </li>
         <h3 class="list-heading">Components</h3>
         <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
         <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
@@ -70,6 +80,7 @@
         <p class="content-desc">
           Inputs are the most important part of a form element. PaperUI has its own input styles.
         </p>
+        <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/input/style.css" /></code></pre>
         <hr />
         <h2>Input labels</h2>
         <p class="content-desc">
@@ -100,12 +111,24 @@
             </div>
           </form>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEnter%2520your%2520email%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522txt%2522%2520placeholder%253D%2522Email%2522%2520name%253D%2522email%2522%2520required%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EEnter%2520your%2520password%2520*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522Password%2522%2520class%253D%2522pwd%2522%2520placeholder%253D%2522Password%2522%2520name%253D%2522password%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
-          style="height: 368px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <form class="form-grp">
+              <div class="input-grp">
+                <label for="email">Enter your email *</label>
+                <input
+                  type="text" class="txt" 
+                  placeholder="Email" name="email" />
+              </div>
+              <div class="input-grp">
+                <label for="password">Enter your password *</label>
+                <input
+                  type="Password" class="pwd"
+                  placeholder="Password" name="password" />
+              </div>
+            </form>
+          </code>
+        </pre>
         <h2>Validation Styles</h2>
         <p class="content-desc">
           For success use <code>.txt-success</code> class for label and
@@ -137,12 +160,24 @@
             </div>
           </form>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522txt-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520email%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522txt%2520success-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522txt-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520password%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522pwd%2520success-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
-          style="height: 703px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <form class="form-grp">
+              <div class="input-grp">
+                <label for="email" class="txt-success">Enter your email *</label>
+                <input
+                  type="text" class="txt success-ol"
+                  placeholder="Email" name="email" />
+              </div>
+              <div class="input-grp">
+                <label for="password" class="txt-success">Enter your password *</label>
+                <input
+                  type="Password" class="pwd success-ol"
+                  placeholder="Password" name="password" />
+              </div>
+            </form>
+          </code>
+        </pre>
         <h2>Error Styles</h2>
         <p class="content-desc">
           For success use <code>.txt-danger</code> class for label and
@@ -174,12 +209,24 @@
             </div>
           </form>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253B%253Cform%2520class%253D%2522form-grp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522txt-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520email%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522txt%2520danger-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-grp%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522txt-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520Enter%2520your%2520password%2520*%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522pwd%2520danger-ol%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
-          style="height: 703px"
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
+        <pre>
+          <code class="html exec-code">
+            <form class="form-grp">
+              <div class="input-grp">
+                <label for="email" class="txt-danger">Enter your email *</label>
+                <input
+                  type="text" class="txt danger-ol"
+                  placeholder="Email" name="email" />
+              </div>
+              <div class="input-grp">
+                <label for="password" class="txt-danger">Enter your password *</label>
+                <input
+                  type="Password" class="pwd danger-ol"
+                  placeholder="Password" name="password" />
+              </div>
+            </form>
+          </code>
+        </pre>
         <hr />
         <footer class="nav-footer">
           <i class="material-icons">chevron_left</i
@@ -189,5 +236,9 @@
         </footer>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
   </body>
 </html>

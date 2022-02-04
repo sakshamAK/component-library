@@ -1,0 +1,8 @@
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.main-content {
+    font-size: 1.2rem;
+}

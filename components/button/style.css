@@ -18,6 +18,11 @@
     font-family: inherit;
     text-decoration: none;
     font-size: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(80%);
 }
 
 .btn-icon {

@@ -1,0 +1,61 @@
+.main-content {
+    font-size: 1.2rem;
+}
+
+.colors-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    height: 10rem;
+    color: var(--font-white);
+    margin-bottom: 3rem;
+}
+
+.colors:nth-child(1) {
+    background-color: var(--primary-color);
+}
+.colors:nth-child(2) {
+    background-color: var(--secondary-color);
+}
+.colors:nth-child(3) {
+    background-color: var(--font-white);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.colors:nth-child(4) {
+    background-color: var(--select-color);
+}
+
+.comp:nth-child(1) {
+    background-color: var(--primary);
+}
+.comp:nth-child(2) {
+    background-color: var(--secondary);
+}
+.comp:nth-child(3) {
+    background-color: var(--success);
+    color: var(--font-white);
+    font-weight: normal;
+}
+.comp:nth-child(4) {
+    background-color: var(--danger);
+}
+.comp:nth-child(5) {
+    background-color: var(--warning);
+}
+.comp:nth-child(6) {
+    background-color: var(--secondary-color);
+}
+.comp:nth-child(7) {
+    background-color: var(--font-white);
+    color: var(--secondary-color);
+    font-weight: bold;
+}

@@ -6,17 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paper UI | Button</title>
-  <link rel="stylesheet" href="button.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../../css/colors.css" />
   <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+  <script src="../../script.js" defer></script>
 </head>
 
 <body>
   <nav class="navbar">
     <div class="nav-title">
       <span class="brand">
-        <h2>PaperUI</h2>
+        <h2><a href="../../">PaperUI</a></h2>
         <span>v1.0</span>
       </span>
       <span class="material-icons ml-auto" id="menu">menu</span>
@@ -35,12 +38,17 @@
     <ul class="side-navbar">
       <h3 class="list-heading">Getting Started</h3>
       <li class="nav-items">
-        <a class="reset-a" href="../../index.html">Introduction</a>
+      <a class="reset-a" href="../../documentation.html">Introduction</a>
       </li>
-      <li class="nav-items"><a class="reset-a" href="#">Color</a></li>
-      <li class="nav-items"><a class="reset-a" href="#">Typography</a></li>
-      <li class="nav-items"><a class="reset-a" href="#">Conclusion</a></li>
-
+      <li class="nav-items">
+      <a class="reset-a" href="../../introduction/colors/">Color</a>
+      </li>
+      <li class="nav-items">
+      <a class="reset-a" href="../../introduction/typography/">Typography</a>
+      </li>
+      <li class="nav-items">
+      <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+      </li>
       <h3 class="list-heading">Components</h3>
       <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
       <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
@@ -66,6 +74,7 @@
         allows you to navigate from one page to another, perform certain
         actions etc.
       </p>
+      <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/button/style.css" /></code></pre>
       <hr />
       <h2>Different Buttons</h2>
       <p class="content-desc">
@@ -80,10 +89,16 @@
         <button class="btn success">success</button>
         <button class="btn dark">dark</button>
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522btn%2520primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520secondary%2522%253Esecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520warning%2522%253Ewarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520danger%2522%253Edanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520success%2522%253Esuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520dark%2522%253Edark%253C%252Fbutton%253E"
-        style="height: 256px" sandbox="allow-scripts allow-same-origin">
-      </iframe>
+      <pre>
+        <code class="html exec-code">
+          <button class="btn primary">Primary</button>
+          <button class="btn secondary">secondary</button>
+          <button class="btn warning">warning</button>
+          <button class="btn danger">danger</button>
+          <button class="btn success">success</button>
+          <button class="btn dark">dark</button>
+        </code>
+      </pre>
       <h2>Outline Buttons</h2>
       <p class="content-desc">
         Just another form of button with outlines instead of background
@@ -98,10 +113,16 @@
         <button class="btn success-ol">success</button>
         <button class="btn dark-ol">dark</button>
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522btn%2520primary-ol%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520secondary-ol%2522%253Esecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520warning-ol%2522%253Ewarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520danger-ol%2522%253Edanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520success-ol%2522%253Esuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520dark-ol%2522%253Edark%253C%252Fbutton%253E"
-        style="height: 256px" sandbox="allow-scripts allow-same-origin">
-      </iframe>
+      <pre>
+        <code class="exec-code">
+          <button class="btn primary-ol">Primary</button>
+          <button class="btn secondary-ol">secondary</button>
+          <button class="btn warning-ol">warning</button>
+          <button class="btn danger-ol">danger</button>
+          <button class="btn success-ol">success</button>
+          <button class="btn dark-ol">dark</button>  
+        </code>
+      </pre>
       <h2>Button Sizes</h2>
       <p class="content-desc">
         We have three different sizes of buttons named sm, md, lg
@@ -112,10 +133,13 @@
         <button class="btn primary md">Medium Button</button>
         <button class="btn primary lg">large Button</button>
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522btn%2520primary%2520sm%2522%253Esmall%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520primary%2520md%2522%253EMedium%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522btn%2520primary%2520lg%2522%253Elarge%2520Button%253C%252Fbutton%253E%250A"
-        style="height: 211px" sandbox="allow-scripts allow-same-origin">
-      </iframe>
+      <pre>
+        <code class="exec-code">
+          <button class="btn primary sm">small button</button>
+          <button class="btn primary md">Medium Button</button>
+          <button class="btn primary lg">large Button</button>  
+        </code>
+      </pre>
       <h2>Link Buttons</h2>
       <p class="content-desc">
         You can use the anchor tags and input tags in form of buttons too.
@@ -125,10 +149,12 @@
         <a class="btn dark" href="#">a tags</a>
         <input type="submit" class="btn danger" value="input tags" />
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Ca%2520class%2520%253D%2520%2522btn%2520dark%2522%2520href%2520%253D%2520%2522%2523%2522%253Ea%2520tags%253C%252Fa%253E%250A%253Cinput%2520type%2520%253D%2520%2522submit%2522%2520class%2520%253D%2520%2522btn%2520danger%2522%2520value%2520%253D%2520%2522input%2520tags%2522%2520%252F%253E%250A"
-        style="height: 189px" sandbox="allow-scripts allow-same-origin">
-      </iframe>
+      <pre>
+        <code class="exec-code">
+          <a class="btn dark" href="#">a tags</a>
+          <input type="submit" class="btn danger" value="input tags" />  
+        </code>
+      </pre>
       <h2>Icon Buttons</h2>
       <p class="content-desc">Buttons can also have icons in them.</p>
       <h3>Examples</h3>
@@ -137,10 +163,13 @@
           <i class="material-icons">save</i>Save
         </button>
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522btn%2520btn-icon%2520primary%2522%253E%253Ci%2520class%2520%253D%2520%2522material-icons%2522%253Esave%253C%252Fi%253ESave%253C%252Fbutton%253E%250A"
-        style="height: 167px" sandbox="allow-scripts allow-same-origin">
-      </iframe>
+      <pre>
+        <code class="exec-code">
+          <button class="btn btn-icon primary">
+            <i class="material-icons">save</i>Save
+          </button>
+        </code>
+      </pre>
       <h2>Floating Action Button</h2>
       <p class="content-desc">
         A floating action button is the one generally available on the bottom
@@ -155,11 +184,16 @@
           </button>
         </div>
       </div>
-      <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=24px&ph=23px&ln=false&fl=1&fm=Hack&fs=13px&lh=172%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522float-action%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F400%252F400%2522%2520alt%253D%2522sample%2520image%2522%2520%252F%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary%2520btn-fa%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522material-icons%2522%2520id%253D%2522fa-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520add%250A%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
-  style="height: 306px;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+      <pre>
+        <code class="exec-code">
+          <div class="float-action">
+            <img src="https://picsum.photos/400/400" alt="sample image" />
+            <button class="btn primary btn-fa">
+              <i class="material-icons" id="fa-icon">add</i>
+            </button>
+          </div>
+        </code>
+      </pre>
       <hr />
       <footer class="nav-footer">
         <i class="material-icons">chevron_left</i>
@@ -169,6 +203,10 @@
       </footer>
     </main>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 
 </html>
