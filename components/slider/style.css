@@ -1,0 +1,11 @@
+.slide {
+    width: 40vw;
+}
+
+.slide input[type = "range"] {
+    width: 100%;
+}
+
+.slide input[type = "range"]::-webkit-slider-thumb {
+    cursor: w-resize;
+}
