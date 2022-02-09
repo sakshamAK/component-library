@@ -39,6 +39,11 @@ body {
     gap: 0.5rem;
 }
 
+.nav-title .brand a {
+    color: var(--font-white);
+    text-decoration: none;
+}
+
 .nav-links {
     position: absolute;
     left: 0;
@@ -94,6 +99,10 @@ body {
     display: block;
     text-align: center;
     width: 5rem;
+}
+
+pre code {
+    font-size: 1rem;
 }
 
 /****** */

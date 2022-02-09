@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr repeat(9, 8rem) 1fr;
+    grid-template-columns: 1fr repeat(9, 2fr) 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
     "... nav nav body body body body body body body ."
@@ -54,11 +54,11 @@
 .main-content {
     grid-area: body;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 .content-desc {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
     margin: 1rem 0;
 }
 .main-content hr {
@@ -71,6 +71,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
 }
@@ -85,4 +86,15 @@ iframe {
 
 .far-left {
     margin-right: auto;
+}
+
+@media screen and (max-width: 990px) {
+    .grid-container {
+        grid-template-areas:
+        "... body body body body body body body body body ..."
+        ;
+    }   
+    .side-navbar {
+        display: none;
+    }
 }
