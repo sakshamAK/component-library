@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper UI | Button</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../css/colors.css" />
+  <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-title">
+      <span class="brand">
+        <h2><a href="../../">PaperUI</a></h2>
+        <span>v1.0</span>
+      </span>
+      <span class="material-icons ml-auto" id="menu">menu</span>
+    </div>
+    <ul class="nav-links">
+      <li class="navbar-items">
+        <a href="../../documentation.html">Docs</a>
+        <span class="material-icons ml-auto" id="close-btn">close</span>
+      </li>
+      <li class="navbar-items"><a href="#">Examples</a></li>
+      <li class="navbar-items"><a href="#">Resources</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-container">
+    <ul class="side-navbar">
+      <h3 class="list-heading">Getting Started</h3>
+      <li class="nav-items">
+      <a class="reset-a" href="../../documentation.html">Introduction</a>
+      </li>
+      <li class="nav-items">
+      <a class="reset-a" href="../../introduction/colors/">Color</a>
+      </li>
+      <li class="nav-items">
+      <a class="reset-a" href="../../introduction/typography/">Typography</a>
+      </li>
+      <li class="nav-items">
+      <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+      </li>
+      <h3 class="list-heading">Components</h3>
+      <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+      <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
+      <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+      <li class="nav-items"><a class="reset-a active" href="../button">Button</a></li>
+      <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+      <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+      <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+      <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+      <li class="nav-items"><a class="reset-a" href="../navigation/">Navigation</a></li>
+      <li class="nav-items"><a class="reset-a" href="../text-utilities/">Text Utilities</a></li>
+      <li class="nav-items"><a class="reset-a" href="../toast/">Toast</a></li>
+      <li class="nav-items"><a class="reset-a" href="../ratings/">Ratings</a></li>
+      <li class="nav-items"><a class="reset-a" href="../modals/">Modals</a></li>
+      <li class="nav-items"><a class="reset-a" href="../grid/">Grids</a></li>
+      <li class="nav-items"><a class="reset-a" href="../slider/">Slider</a></li>
+
+    </ul>
+    <main class="main-content">
+      <h1>Buttons</h1>
+      <p class="content-desc">
+        Buttons are the most common and most important part of a web app that
+        allows you to navigate from one page to another, perform certain
+        actions etc.
+      </p>
+      <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/button/style.css" /></code></pre>
+      <hr />
+      <h2>Different Buttons</h2>
+      <p class="content-desc">
+        Paper provides a lot of colorful buttons that are ready on the go.
+      </p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <button class="btn primary">Primary</button>
+        <button class="btn secondary">secondary</button>
+        <button class="btn warning">warning</button>
+        <button class="btn danger">danger</button>
+        <button class="btn success">success</button>
+        <button class="btn dark">dark</button>
+      </div>
+      <pre>
+        <code class="html exec-code">
+          <button class="btn primary">Primary</button>
+          <button class="btn secondary">secondary</button>
+          <button class="btn warning">warning</button>
+          <button class="btn danger">danger</button>
+          <button class="btn success">success</button>
+          <button class="btn dark">dark</button>
+        </code>
+      </pre>
+      <h2>Outline Buttons</h2>
+      <p class="content-desc">
+        Just another form of button with outlines instead of background
+        colors.
+      </p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <button class="btn primary-ol">Primary</button>
+        <button class="btn secondary-ol">secondary</button>
+        <button class="btn warning-ol">warning</button>
+        <button class="btn danger-ol">danger</button>
+        <button class="btn success-ol">success</button>
+        <button class="btn dark-ol">dark</button>
+      </div>
+      <pre>
+        <code class="exec-code">
+          <button class="btn primary-ol">Primary</button>
+          <button class="btn secondary-ol">secondary</button>
+          <button class="btn warning-ol">warning</button>
+          <button class="btn danger-ol">danger</button>
+          <button class="btn success-ol">success</button>
+          <button class="btn dark-ol">dark</button>  
+        </code>
+      </pre>
+      <h2>Button Sizes</h2>
+      <p class="content-desc">
+        We have three different sizes of buttons named sm, md, lg
+      </p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <button class="btn primary sm">small button</button>
+        <button class="btn primary md">Medium Button</button>
+        <button class="btn primary lg">large Button</button>
+      </div>
+      <pre>
+        <code class="exec-code">
+          <button class="btn primary sm">small button</button>
+          <button class="btn primary md">Medium Button</button>
+          <button class="btn primary lg">large Button</button>  
+        </code>
+      </pre>
+      <h2>Link Buttons</h2>
+      <p class="content-desc">
+        You can use the anchor tags and input tags in form of buttons too.
+      </p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <a class="btn dark" href="#">a tags</a>
+        <input type="submit" class="btn danger" value="input tags" />
+      </div>
+      <pre>
+        <code class="exec-code">
+          <a class="btn dark" href="#">a tags</a>
+          <input type="submit" class="btn danger" value="input tags" />  
+        </code>
+      </pre>
+      <h2>Icon Buttons</h2>
+      <p class="content-desc">Buttons can also have icons in them.</p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <button class="btn btn-icon primary">
+          <i class="material-icons">save</i>Save
+        </button>
+      </div>
+      <pre>
+        <code class="exec-code">
+          <button class="btn btn-icon primary">
+            <i class="material-icons">save</i>Save
+          </button>
+        </code>
+      </pre>
+      <h2>Floating Action Button</h2>
+      <p class="content-desc">
+        A floating action button is the one generally available on the bottom
+        right corner of every post.
+      </p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <div class="float-action">
+          <img src="https://picsum.photos/400/400" alt="sample image" />
+          <button class="btn primary btn-fa">
+            <i class="material-icons" id="fa-icon">add</i>
+          </button>
+        </div>
+      </div>
+      <pre>
+        <code class="exec-code">
+          <div class="float-action">
+            <img src="https://picsum.photos/400/400" alt="sample image" />
+            <button class="btn primary btn-fa">
+              <i class="material-icons" id="fa-icon">add</i>
+            </button>
+          </div>
+        </code>
+      </pre>
+      <hr />
+      <footer class="nav-footer">
+        <i class="material-icons">chevron_left</i>
+        <a class="footer-a far-left" href="../badge/">badge</a>
+        <a class="footer-a" href="../card/">card</a>
+        <i class="material-icons">chevron_right</i>
+      </footer>
+    </main>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+@import url("../../css/navbar.css");
+@import url("../../css/sidebar.css");
+@import url("../../css/colors.css");
+
+/***** MAIN CONTENT*/
+
+.example-box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--font-white);
+    font-family: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(80%);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sm {
+    font-size: initial;
+}
+.md {
+    font-size: 1.2rem;
+}
+.lg {
+    font-size: 1.5rem;
+}
+
+.btn-fa {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.fa-icon {
+    font-size: 2rem;
+}
+
+.float-action {
+    position: relative;
+}
+
+.float-action img {
+    width: 100%;
+}
+/***** */

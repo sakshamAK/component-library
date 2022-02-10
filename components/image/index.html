@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper UI | Image</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/sidebar.css">
+  <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <script src="../../script.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-title">
+      <span class="brand">
+        <h2><a href="../../">PaperUI</a></h2>
+        <span>v1.0</span>
+      </span>
+      <span class="material-icons ml-auto" id="menu">menu</span>
+    </div>
+    <ul class="nav-links">
+      <li class="navbar-items"><a href="../../documentation.html">Docs</a>
+        <span class="material-icons ml-auto" id="close-btn">close</span>
+      </li>
+      <li class="navbar-items"><a href="#">Examples</a></li>
+      <li class="navbar-items"><a href="#">Resources</a></li>
+    </ul>
+  </nav>
+
+  <div class="grid-container">
+    <ul class="side-navbar">
+      <h3 class="list-heading">Getting Started</h3>
+      <li class="nav-items">
+        <a class="reset-a" href="../../documentation.html">Introduction</a>
+        </li>
+        <li class="nav-items">
+        <a class="reset-a" href="../../introduction/colors/">Color</a>
+        </li>
+        <li class="nav-items">
+        <a class="reset-a" href="../../introduction/typography/">Typography</a>
+        </li>
+        <li class="nav-items">
+        <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+        </li>
+      <h3 class="list-heading">Components</h3>
+      <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+      <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
+      <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+      <li class="nav-items"><a class="reset-a" href="../button">Button</a></li>
+      <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+      <li class="nav-items"><a class="reset-a active" href="../image/">Image</a></li>
+      <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+      <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+      <li class="nav-items"><a class="reset-a" href="../navigation/">Navigation</a></li>
+      <li class="nav-items"><a class="reset-a" href="../text-utilities/">Text Utilities</a></li>
+      <li class="nav-items"><a class="reset-a" href="../toast/">Toast</a></li>
+      <li class="nav-items"><a class="reset-a" href="../ratings/">Ratings</a></li>
+      <li class="nav-items"><a class="reset-a" href="../modals/">Modals</a></li>
+      <li class="nav-items"><a class="reset-a" href="../grid/">Grids</a></li>
+      <li class="nav-items"><a class="reset-a" href="../slider/">Slider</a></li>
+
+    </ul>
+    <main class="main-content">
+      <h1>Images</h1>
+      <p class="content-desc">PaperUI provides 3 types of images. Responsive, round, soft cornered</p>
+      <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/image/style.css" /></code></pre>
+      <hr />
+      <h2>Responsive Image</h2>
+      <p class="content-desc">Use <code>img-resp</code> class to make your images fit in the parent element</p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <img class="img-resp" src="../../images/sample/sampleImg.jpg" />
+      </div>
+      <pre>
+        <code class="html exec-code">
+          <img class="img-resp" src="../../images/sample/sampleImg.jpg" />
+        </code>
+      </pre> 
+      <h2>Round Images</h2>
+      <p class="content-desc">Use <code>img-rnd</code> class to make your images circular or ellipse</p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <img class="img-rnd img-resp" src="../../images/sample/sampleImg.jpg" />
+      </div>
+      <pre>
+        <code class="html exec-code">
+          <img class="img-rnd img-resp" src="../../images/sample/sampleImg.jpg" />
+        </code>
+      </pre> 
+      <h2>Soft-cornered Images</h2>
+      <p class="content-desc">Use <code>.corner-soft</code> class to make your images soft cornered</p>
+      <h3>Examples</h3>
+      <div class="example-box">
+        <img class="corner-soft img-resp" src="../../images/sample/sampleImg.jpg" />
+      </div>
+      <pre>
+        <code class="html exec-code">
+          <img class="corner-soft img-resp" src="../../images/sample/sampleImg.jpg" />
+        </code>
+      </pre>
+      <hr />
+      <footer class="nav-footer">
+        <i class="material-icons">chevron_left</i><a class="footer-a far-left" href="../card/">card</a>
+        <a class="footer-a" href="../input/">Input</a><i class="material-icons">chevron_right</i>
+      </footer>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

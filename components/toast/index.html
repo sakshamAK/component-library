@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper UI | Toast</title>
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../button/style.css" />
+    <link rel="stylesheet" href="../alert/style.css" />
+    <link rel="stylesheet" href="../../css/colors.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../../images/logo.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+    <script src="../../script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-title">
+            <span class="brand">
+              <h2><a href="../../">PaperUI</a></h2>
+              <span>v1.0</span>
+            </span>
+            <span class="material-icons ml-auto" id="menu">menu</span>
+        </div>
+        <ul class="nav-links">
+            <li class="navbar-items">
+                <a href="../../documentation.html">Docs</a>
+                <span class="material-icons ml-auto" id="close-btn">close</span>
+            </li>
+            <li class="navbar-items"><a href="#">Examples</a></li>
+            <li class="navbar-items"><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="grid-container">
+        <ul class="side-navbar">
+            <h3 class="list-heading">Getting Started</h3>
+            <li class="nav-items">
+              <a class="reset-a" href="../../documentation.html">Introduction</a>
+              </li>
+              <li class="nav-items">
+              <a class="reset-a" href="../../introduction/colors/">Color</a>
+              </li>
+              <li class="nav-items">
+              <a class="reset-a" href="../../introduction/typography/">Typography</a>
+              </li>
+              <li class="nav-items">
+              <a class="reset-a" href="../../introduction/conclusion/">Conclusion</a>
+              </li>
+            <h3 class="list-heading">Components</h3>
+            <li class="nav-items"><a class="reset-a" href="../alert">Alert</a></li>
+            <li class="nav-items"><a class="reset-a" href="../avatar">Avatar</a></li>
+            <li class="nav-items"><a class="reset-a" href="../badge">Badge</a></li>
+            <li class="nav-items"><a class="reset-a" href="../button">Button</a></li>
+            <li class="nav-items"><a class="reset-a" href="../card">Card</a></li>
+            <li class="nav-items"><a class="reset-a" href="../image/">Image</a></li>
+            <li class="nav-items"><a class="reset-a" href="../input/">Input</a></li>
+            <li class="nav-items"><a class="reset-a" href="../lists/">Lists</a></li>
+            <li class="nav-items"><a class="reset-a" href="../navigation/">Navigation</a></li>
+            <li class="nav-items"><a class="reset-a" href="../text-utilities/">Text Utilities</a></li>
+            <li class="nav-items"><a class="reset-a active" href="../toast/">Toast</a></li>
+            <li class="nav-items"><a class="reset-a" href="../ratings/">Ratings</a></li>
+            <li class="nav-items"><a class="reset-a" href="../modals/">Modals</a></li>
+            <li class="nav-items"><a class="reset-a" href="../grid/">Grids</a></li>
+            <li class="nav-items"><a class="reset-a" href="../slider/">Slider</a></li>
+    
+        </ul>
+        <main class="main-content">
+            <h1>Toast</h1>
+            <p class="content-desc">Toast is a message that appears on bottom of the page.</p>
+            <pre><code class="html exec-code"><link rel = "stylesheet" href = "https://ak-paper-ui.netlify.app/components/toast/style.css" /></code></pre>
+            <hr />
+            <h2>Default Toast</h2>
+            <p class="content-desc">
+              To access toast styles use <code>&nbsp;.toast &nbsp;</code> class names in your container.
+            </p>
+            <h3>Examples</h3>
+            <div class="example-box">
+                <div class="toast primary">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn primary">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+            </div>
+            <pre>
+              <code class="html exec-code">
+                <div class="toast primary">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn primary">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+              </code>
+            </pre>
+            <h2>
+              Colored Toast
+            </h2>
+            <p class="content-desc">
+              Toast is introduced in five colors: Primary, Warning, Danger, Success, Dark.
+            </p>
+            <h3>Examples</h3>
+            <div class="example-box">
+              <div class="toast primary">
+                Can't send photo. Retry in 5 seconds.  
+                <button class = "btn primary">Retry</button>
+                <i class="material-icons">close</i>
+              </div>
+              <div class="toast warning">
+                Can't send photo. Retry in 5 seconds.  
+                <button class = "btn warning">Retry</button>
+                <i class="material-icons">close</i>
+              </div>
+              <div class="toast danger">
+                Can't send photo. Retry in 5 seconds.  
+                <button class = "btn danger">Retry</button>
+                <i class="material-icons">close</i>
+              </div>
+              <div class="toast success">
+                Can't send photo. Retry in 5 seconds.  
+                <button class = "btn success">Retry</button>
+                <i class="material-icons">close</i>
+              </div>
+              <div class="toast dark">
+                Can't send photo. Retry in 5 seconds.  
+                <button class = "btn dark">Retry</button>
+                <i class="material-icons">close</i>
+              </div>
+            </div>
+            <pre>
+              <code class="html exec-code">
+                <div class="toast primary">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn primary">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast warning">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn warning">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast danger">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn danger">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast success">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn success">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+                <div class="toast dark">
+                  Can't send photo. Retry in 5 seconds.  
+                  <button class = "btn dark">Retry</button>
+                  <i class="material-icons">close</i>
+                </div>
+              </code>
+            </pre>
+            <div class="alert dark">
+              <i class="material-icons">insights</i>
+              To use a fixed toast, use .fix-toast class name in the toast div.
+            </div>
+            <hr />
+            <footer class="nav-footer">
+                <i class="material-icons">chevron_left</i><a class="footer-a far-left" href="../text-utilities/">Text Utilities</a>
+                <a class="footer-a" href="../ratings/">Ratings</a><i
+                    class="material-icons">chevron_right</i>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
