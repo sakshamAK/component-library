@@ -1,0 +1,22 @@
+@import url('./components/alert/style.css');
+@import url('./components/avatar/style.css');
+@import url('./components/badge/style.css');
+@import url('./components/button/style.css');
+@import url('./components/card/style.css');
+@import url('./components/image/style.css');
+@import url('./components/input/style.css');
+@import url('./components/lists/style.css');
+@import url('./components/modals/style.css');
+@import url('./components/navigation/style.css');
+@import url('./components/ratings/style.css');
+@import url('./components/text-utilities/style.css');
+@import url('./components/toast/style.css');
+
+
+.main-content {
+    font-size: 1.2rem;
+}
+
+.my-color {
+    background: salmon;
+}
