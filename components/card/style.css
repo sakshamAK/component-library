@@ -121,6 +121,30 @@
 .alt-text {
     display: none;
 }
+
+.ecom {
+    display: grid;
+    grid-auto-rows:1fr;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "head head head img"
+    "para para para img"
+    "btn  btn  .    img"
+    ;
+}
+
+.ecom .heading {
+    grid-area: head;
+}
+.ecom .para {
+    grid-area: para;
+}
+.ecom .btn-grp {
+    grid-area: btn;
+}
+.ecom .h-img {
+    grid-area: img;
+}
 /***** */
 
 /***** MEDIA QUERIES */
