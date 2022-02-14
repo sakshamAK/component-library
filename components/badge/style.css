@@ -42,6 +42,11 @@
     left: -5ch;
     top: 1rem;
 }
+.card-badge-rt {
+    position: absolute;
+    right: -5ch;
+    top: 1rem;
+}
 
 .material-icons.badge-ico {
     font-size: 2.5rem;
