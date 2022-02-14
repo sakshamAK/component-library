@@ -27,6 +27,7 @@
 .badge-h {
     display: flex;
     gap: 1rem;
+    position: relative;
 }
 
 .head-badge {
@@ -34,6 +35,12 @@
     padding: 0 1rem;
     border-radius: 5px;
     color: var(--font-white);
+}
+
+.card-badge {
+    position: absolute;
+    left: -5ch;
+    top: 1rem;
 }
 
 .material-icons.badge-ico {
