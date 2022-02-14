@@ -129,7 +129,7 @@
     grid-template-areas: 
     "head head head img"
     "para para para img"
-    "btn  btn  .    img"
+    "btn  btn  btn  img"
     ;
 }
 
