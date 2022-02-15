@@ -122,7 +122,7 @@
     display: none;
 }
 
-.ecom {
+.hcard-2 {
     display: grid;
     grid-auto-rows:1fr;
     grid-auto-columns: 1fr;
@@ -133,17 +133,61 @@
     ;
 }
 
-.ecom .heading {
+.hcard-2 .heading {
     grid-area: head;
 }
-.ecom .para {
+.hcard-2 .para {
     grid-area: para;
 }
-.ecom .btn-grp {
+.hcard-2 .btn-grp {
     grid-area: btn;
 }
-.ecom .h-img {
+.hcard-2 .h-img {
     grid-area: img;
+}
+
+.ecom {
+    width: 15rem;
+    padding: 0;
+    position: relative;
+}
+
+.ecom .material-icons {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    color: white;
+    background: #ffffff80;
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ecom .material-icons:hover {
+    color: var(--danger);
+}
+
+.ecom .prod-details {
+    padding: 1rem;
+}
+
+.prod-details .prod-cate {
+    font-size: 0.7rem;
+    line-height: 1em;
+}
+.prod-details .prod-det {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.prod-details .prod-det span{
+    text-decoration: line-through;
+    color: lightslategray;
+}
+
+.prod-details .btn {
+    margin: 0.5rem 0 0 0;
+    width: max-content;
+    padding: 0.3rem 0.5rem;    
 }
 /***** */
 

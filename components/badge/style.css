@@ -32,14 +32,13 @@
 
 .head-badge {
     background: lightslategray;
-    padding: 0 1rem;
-    border-radius: 5px;
+    padding: 0 0.5rem;
     color: var(--font-white);
 }
 
 .card-badge {
     position: absolute;
-    left: -5ch;
+    left: -1ch;
     top: 1rem;
 }
 .card-badge-rt {
