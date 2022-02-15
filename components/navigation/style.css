@@ -48,7 +48,8 @@
 }
 
 .menu-list-items:hover {
-    background: #3f64f3;
+    background: var(--primary);
+    filter: brightness(80%);
 }
 
 .nav-icons {
