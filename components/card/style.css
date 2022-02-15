@@ -154,9 +154,9 @@
 
 .ecom .material-icons {
     position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    color: white;
+    right: -0.5ch;
+    top: -0.5ch;
+    background: #fff;
     padding: 0.4rem;
     border-radius: 50%;
     cursor: pointer;
